@@ -7,18 +7,34 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Ventiler</h1>
-  </header>
+  <section id="vy-galleri">
+    <header>
+      <h1>Ventiler</h1>
+      <nav class="flikar" id="flikar" aria-label="Kategori">
+        <button type="button" data-kategori="alla" aria-pressed="true">Alla</button>
+        <button type="button" data-kategori="radiator" aria-pressed="false">Radiatorventiler</button>
+        <button type="button" data-kategori="regler" aria-pressed="false">Reglerventiler</button>
+      </nav>
+    </header>
+    <main>
+      <p id="status">Laddar…</p>
+      <div class="galleri" id="galleri"></div>
+    </main>
+  </section>
 
-  <main>
-    <p id="status">Laddar…</p>
-  </main>
+  <section id="vy-visare" hidden>
+    <header class="visare-huvud">
+      <button type="button" id="tillbaka" class="tillbaka">&larr; Tillbaka</button>
+      <h2 id="visare-titel"></h2>
+    </header>
+    <main>
+      <p id="visare-status">Laddar produktblad…</p>
+      <div id="sidor"></div>
+      <p class="fallback"><a id="pdf-lank" href="#" target="_blank" rel="noopener">Öppna PDF i ny flik</a></p>
+    </main>
+  </section>
 
-  <footer>
-    <small>&copy; <span id="year"></span> Ventiler</small>
-  </footer>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

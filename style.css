@@ -3,6 +3,9 @@
   --fg: #1d1d1f;
   --muted: #6b6b70;
   --accent: #1f6feb;
+  --accent-bg: #1f6feb;
+  --card: #ffffff;
+  --border: #d0d0d5;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -11,6 +14,9 @@
     --fg: #ececee;
     --muted: #9a9aa0;
     --accent: #58a6ff;
+    --accent-bg: #1f6feb;
+    --card: #232326;
+    --border: #3a3a40;
   }
 }
 
@@ -50,3 +56,117 @@ h1 {
 footer {
   color: var(--muted);
 }
+
+/* ---- Flikar ---- */
+.flikar {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.flikar button {
+  flex: 1;
+  min-height: 48px;
+  padding: 0.5rem;
+  font: inherit;
+  color: var(--fg);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.flikar button[aria-pressed="true"] {
+  color: #fff;
+  background: var(--accent-bg);
+  border-color: var(--accent-bg);
+}
+
+/* ---- Galleri ---- */
+.galleri {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+@media (min-width: 600px) {
+  .galleri { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (min-width: 900px) {
+  .galleri { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+.kort {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  font: inherit;
+  color: var(--fg);
+  text-align: center;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.kort img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: #fff;
+}
+
+.kort span {
+  padding: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.kort:active { border-color: var(--accent); }
+
+/* ---- Visare ---- */
+.visare-huvud {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.visare-huvud h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tillbaka {
+  flex: none;
+  min-height: 48px;
+  padding: 0 1rem;
+  font: inherit;
+  color: #fff;
+  background: var(--accent-bg);
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#sidor canvas {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.75rem;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.fallback a { color: var(--accent); }
+
+.fel { color: #d1242f; font-weight: 600; }
+
+[hidden] { display: none !important; }

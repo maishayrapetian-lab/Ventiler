@@ -1,0 +1,6 @@
+[
+  { "id": "radiator-exempel-1", "kategori": "radiator", "fabrikat": "Exempel AB", "modell": "RV-1", "bild": "bilder/radiator-exempel-1.svg", "produktblad": "produktblad/exempel.pdf" },
+  { "id": "radiator-exempel-2", "kategori": "radiator", "fabrikat": "Exempel AB", "modell": "RV-2", "bild": "bilder/radiator-exempel-2.svg", "produktblad": "produktblad/exempel.pdf" },
+  { "id": "regler-exempel-1", "kategori": "regler", "fabrikat": "Provföretaget", "modell": "RG-1", "bild": "bilder/regler-exempel-1.svg", "produktblad": "produktblad/exempel.pdf" },
+  { "id": "regler-exempel-2", "kategori": "regler", "fabrikat": "Provföretaget", "modell": "RG-2", "bild": "bilder/regler-exempel-2.svg", "produktblad": "produktblad/exempel.pdf" }
+]
