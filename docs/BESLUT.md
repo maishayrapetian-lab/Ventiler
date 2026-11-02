@@ -56,6 +56,8 @@ Användaren går igenom en ventil i taget mot produktbladet. Godkända ventiler 
 | imi-ta-ventim-5950 | 2026-11-02 | Godkänd enligt B-27 (exakt, alla 86 rader, s. 4–5). |
 | purmo-radiatorer | 2026-11-02 | Godkänd enligt B-27 (exakt, s. 9). Katalogen är Altech/SGDS, inte Purmo – användaren valde att **behålla namnet Purmo**. |
 
+**B-28 (2026-11-02):** MMA FV får ingen kv-tabell – användaren valde att hoppa över den.
+
 **B-27 (2026-11-02):** Resterande 11 ventiler granskas av Claude (oberoende kontroll siffra för siffra mot PDF:en, via Sonnet-agenter). Exakt överensstämmelse → godkänd. Avvikelser och tolkningsfrågor tas upp med användaren en i taget. *Användarens val – ont om tid för egen granskning.*
 
 ## Intervju – frågor och svar
