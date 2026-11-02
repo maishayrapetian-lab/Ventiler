@@ -8,6 +8,7 @@
    Huvudmodellen planerar, skriver tydliga uppdrag till agenterna, granskar resultatet och håller dokumentationen uppdaterad.
 2. **Intervju, en fråga i taget.** Nya delar av sidan tas fram genom att fråga användaren en fråga åt gången (på svenska) innan något byggs.
 3. **Dokumentera besluten.** Varje beslut förs in i [docs/BESLUT.md](docs/BESLUT.md) direkt efter att det fattats. Läs den filen först i varje ny session.
+4. **Förstå målet.** Appen finns för att hitta **kv-värden per förinställning** inför injustering – se [docs/DOMAN.md](docs/DOMAN.md).
 
 ## Teknik
 

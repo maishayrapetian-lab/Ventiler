@@ -1,6 +1,21 @@
 [
-  { "id": "radiator-exempel-1", "kategori": "radiator", "fabrikat": "Exempel AB", "modell": "RV-1", "bild": "bilder/radiator-exempel-1.svg", "produktblad": "produktblad/exempel.pdf" },
-  { "id": "radiator-exempel-2", "kategori": "radiator", "fabrikat": "Exempel AB", "modell": "RV-2", "bild": "bilder/radiator-exempel-2.svg", "produktblad": "produktblad/exempel.pdf" },
-  { "id": "regler-exempel-1", "kategori": "regler", "fabrikat": "Provföretaget", "modell": "RG-1", "bild": "bilder/regler-exempel-1.svg", "produktblad": "produktblad/exempel.pdf" },
-  { "id": "regler-exempel-2", "kategori": "regler", "fabrikat": "Provföretaget", "modell": "RG-2", "bild": "bilder/regler-exempel-2.svg", "produktblad": "produktblad/exempel.pdf" }
+  {"id":"calypso-trv-3","kategori":"radiator","fabrikat":"IMI TA","modell":"Calypso TRV-3","bilder":["bilder/calypso-trv-3.jpg"],"produktblad":"produktblad/calypso-trv-3.pdf"},
+  {"id":"danfoss-ra-g","kategori":"radiator","fabrikat":"Danfoss","modell":"RA-G","bilder":["bilder/danfoss-ra-g.jpg","bilder/danfoss-ra-g-2.jpg"],"produktblad":"produktblad/danfoss-ra-g.pdf"},
+  {"id":"danfoss-ra-n","kategori":"radiator","fabrikat":"Danfoss","modell":"RA-N","bilder":["bilder/danfoss-ra-n.jpg"],"produktblad":"produktblad/danfoss-ra-n.pdf"},
+  {"id":"imi-eclipse","kategori":"radiator","fabrikat":"IMI TA","modell":"Eclipse","bilder":["bilder/imi-eclipse.jpg"],"produktblad":"produktblad/imi-eclipse.pdf"},
+  {"id":"purmo-flamingo-fla-v2","kategori":"radiator","fabrikat":"Purmo","modell":"Flamingo FLA V2","bilder":["bilder/purmo-flamingo-fla-v2.jpg","bilder/purmo-flamingo-fla-v2-2.jpg","bilder/purmo-flamingo-fla-v2-3.jpg"],"produktblad":"produktblad/purmo-flamingo-fla-v2.pdf"},
+  {"id":"purmo-flamingo","kategori":"radiator","fabrikat":"Purmo","modell":"Flamingo (äldre)","bilder":[],"produktblad":"produktblad/purmo-flamingo.pdf"},
+  {"id":"imi-heimeier-4340","kategori":"radiator","fabrikat":"IMI Heimeier","modell":"Termostatinsats 4340","bilder":["bilder/imi-heimeier-4340.jpg"],"produktblad":"produktblad/imi-heimeier-4340.pdf"},
+  {"id":"imi-heimeier-4360","kategori":"radiator","fabrikat":"IMI Heimeier","modell":"Termostatinsats 4360","bilder":["bilder/imi-heimeier-4360.jpg"],"produktblad":"produktblad/imi-heimeier-4360-4361.pdf"},
+  {"id":"imi-heimeier-4361","kategori":"radiator","fabrikat":"IMI Heimeier","modell":"Termostatinsats 4361","bilder":["bilder/imi-heimeier-4361.jpg"],"produktblad":"produktblad/imi-heimeier-4360-4361.pdf"},
+  {"id":"mma-fvi-hle","kategori":"radiator","fabrikat":"MMA","modell":"FVI-HLE","bilder":["bilder/mma-fvi-hle.jpg"],"produktblad":"produktblad/mma-fvi-hle.pdf"},
+  {"id":"mma-fv","kategori":"radiator","fabrikat":"MMA","modell":"FV","bilder":["bilder/mma-fv.jpg","bilder/mma-fv-2.jpg"],"produktblad":null},
+  {"id":"purmo-m30","kategori":"radiator","fabrikat":"Purmo (MMA)","modell":"M30","bilder":["bilder/purmo-m30.jpg","bilder/purmo-m30-2.jpg"],"produktblad":"produktblad/purmo-m30.pdf"},
+  {"id":"imi-ta-trim-a","kategori":"radiator","fabrikat":"IMI TA","modell":"Trim A","bilder":["bilder/imi-ta-trim-a.jpg"],"produktblad":"produktblad/imi-ta-trim-a.pdf"},
+  {"id":"imi-ta-trim","kategori":"radiator","fabrikat":"IMI TA","modell":"Trim","bilder":["bilder/imi-ta-trim.jpg"],"produktblad":"produktblad/imi-ta-trim.pdf"},
+  {"id":"honeywell-v2000lx","kategori":"radiator","fabrikat":"Honeywell","modell":"V2000LX","bilder":["bilder/honeywell-v2000lx.jpg"],"produktblad":"produktblad/honeywell-v2000lx.pdf"},
+  {"id":"purmo-radiatorer","kategori":"radiator","fabrikat":"Purmo","modell":"Radiatorer (katalog)","bilder":[],"produktblad":"produktblad/purmo-radiatorer.pdf"},
+  {"id":"lindab-ttr-ttv","kategori":"regler","fabrikat":"Lindab","modell":"TTR/TTV","bilder":["bilder/lindab-ttr-ttv.jpg"],"produktblad":"produktblad/lindab-ttr-ttv.pdf"},
+  {"id":"imi-ta-ventim-5950","kategori":"regler","fabrikat":"IMI TA","modell":"Ventim 5950","bilder":["bilder/imi-ta-ventim-5950.jpg"],"produktblad":"produktblad/imi-ta-ventim-5950.pdf"},
+  {"id":"siemens-vd","kategori":"regler","fabrikat":"Siemens","modell":"VD1..CLC","bilder":[],"produktblad":"produktblad/siemens-vd.pdf"}
 ]

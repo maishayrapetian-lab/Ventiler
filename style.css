@@ -36,8 +36,7 @@ body {
 }
 
 header,
-main,
-footer {
+main {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
@@ -51,10 +50,6 @@ main {
 h1 {
   margin: 0;
   color: var(--accent);
-}
-
-footer {
-  color: var(--muted);
 }
 
 /* ---- Flikar ---- */
@@ -157,12 +152,134 @@ footer {
   cursor: pointer;
 }
 
-#sidor canvas {
-  display: block;
+.pdf-sida {
   width: 100%;
   margin-bottom: 0.75rem;
   background: #fff;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.pdf-sida canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#visare-status.saknas {
+  padding: 1rem;
+  color: var(--muted);
+  background: var(--card);
+  border: 1px dashed var(--border);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* ---- Bildplatshållare ---- */
+.bildplats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  color: var(--muted);
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+/* ---- kv ---- */
+#kv-sektion { margin-bottom: 1.25rem; }
+
+.kv-saknas {
+  padding: 0.75rem 1rem;
+  color: var(--muted);
+  background: var(--card);
+  border: 1px dashed var(--border);
+  border-radius: 10px;
+}
+
+.varning {
+  margin-bottom: 0.75rem;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  color: #4a3200;
+  background: #ffc83d;
+  border: 2px solid #b97d00;
+  border-radius: 10px;
+}
+
+.kv-block { margin-bottom: 1rem; }
+
+.kv-block h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+}
+
+.tabell-ram {
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--card);
+}
+
+.kv-tabell {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 1.25rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.kv-tabell th,
+.kv-tabell td {
+  padding: 0.6rem 0.9rem;
+  text-align: right;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--border);
+}
+
+.kv-tabell thead th {
+  font-size: 1rem;
+  background: var(--bg);
+}
+
+.kv-tabell th:first-child {
+  position: sticky;
+  left: 0;
+  text-align: left;
+  font-weight: 700;
+  background: var(--bg);
+  border-right: 1px solid var(--border);
+}
+
+.kv-tabell tbody tr:last-child th,
+.kv-tabell tbody tr:last-child td { border-bottom: 0; }
+
+.liten {
+  margin: 0.25rem 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* ---- Fotoremsa ---- */
+#foton { margin-bottom: 1.25rem; }
+
+.fotoremsa {
+  display: flex;
+  gap: 0.5rem;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.fotoremsa img {
+  flex: none;
+  height: 150px;
+  width: auto;
+  max-width: 80vw;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
 }
 
 .fallback a { color: var(--accent); }

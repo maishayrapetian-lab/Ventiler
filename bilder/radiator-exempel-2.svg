@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="400" height="400" role="img" aria-label="Exempel RV-2">
-  <rect width="200" height="200" fill="#eef0f3"/>
-  <path d="M40 100 a30 30 0 1 1 120 0 v10 h-120z M85 40 h30 v20 h-30z" fill="#2da44e"/>
-  <text x="100" y="185" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">Exempel RV-2</text>
-</svg>
