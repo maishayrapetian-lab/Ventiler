@@ -56,6 +56,8 @@ Användaren går igenom en ventil i taget mot produktbladet. Godkända ventiler 
 | imi-ta-ventim-5950 | 2026-11-02 | Godkänd enligt B-27 (exakt, alla 86 rader, s. 4–5). |
 | purmo-radiatorer | 2026-11-02 | Godkänd enligt B-27 (exakt, s. 9). Katalogen är Altech/SGDS, inte Purmo – användaren valde att **behålla namnet Purmo**. |
 
+**B-38 (2026-11-02):** Granskningsresultat B-37: 0 avvikelser. 27 tabeller exakta → godkända. 19 tolkningsfall godkända enligt Claudes förslag med förtydligande noteringar (källor som säger emot sig själva, butikssida som källa, värden från diagrametiketter, kv för hela radiatorn m.m.). imi-ta-termostatoverdelar behålls trots samma värden som 4340/4360/4361 (TA-märkt). Evoflow/Evoflow-koppel fick tabeller per varv. Alla 64 kv-tabeller är nu `granskad: true`. *Användarens val: "Ja, godkänn alla".*
+
 **B-37 (2026-11-02):** De 46 nya kv-tabellerna granskas på samma sätt som i B-27: oberoende kontroll siffra för siffra mot produktbladet via Sonnet-agenter. Exakt överensstämmelse → `granskad: true`. Avvikelser och tolkningsfrågor tas upp med användaren en i taget. *Användarens val.*
 
 **B-36 (2026-11-02):** Alla 54 nya kandidater i docs/KANDIDATER.md läggs in i galleriet (dubletterna mma-fv, mma-fvi, danfoss-ra-n-inlodning hoppas över). kv-tabeller läses ut där bladet har tabell (eller fast kv), alla `granskad: false`. Poster med bara diagram eller utan kv visar "kv-tabell saknas – läs av i produktbladet". *Användarens val (alternativ 1).*
