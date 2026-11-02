@@ -56,6 +56,8 @@ Användaren går igenom en ventil i taget mot produktbladet. Godkända ventiler 
 | imi-ta-ventim-5950 | 2026-11-02 | Godkänd enligt B-27 (exakt, alla 86 rader, s. 4–5). |
 | purmo-radiatorer | 2026-11-02 | Godkänd enligt B-27 (exakt, s. 9). Katalogen är Altech/SGDS, inte Purmo – användaren valde att **behålla namnet Purmo**. |
 
+**B-32 (2026-11-02):** Appen används främst i telefoner. Eftersom iPhone/Android saknar Arial Narrow laddas webbtypsnittet **Archivo Narrow** (Google Fonts, 400/700) för kv-tabellen, så att alla telefoner får samma smala tabell. Arial Narrow ligger kvar som reserv. *Användarens val: "det som funkar överallt".*
+
 **B-31 (2026-11-02):** kv-tabellen visas i Arial Narrow 10 pt med tätare celler (reserv: Roboto Condensed / `font-stretch: condensed` på mobiler utan Arial Narrow). *Användarens önskemål.*
 
 **B-30 (2026-11-02):** Ingen inloggning – appen är öppen för alla som har länken. Streamlit och Cloudflare Access avfärdade. *Användarens val.*
