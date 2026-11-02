@@ -56,6 +56,8 @@ Användaren går igenom en ventil i taget mot produktbladet. Godkända ventiler 
 | imi-ta-ventim-5950 | 2026-11-02 | Godkänd enligt B-27 (exakt, alla 86 rader, s. 4–5). |
 | purmo-radiatorer | 2026-11-02 | Godkänd enligt B-27 (exakt, s. 9). Katalogen är Altech/SGDS, inte Purmo – användaren valde att **behålla namnet Purmo**. |
 
+**B-36 (2026-11-02):** Alla 54 nya kandidater i docs/KANDIDATER.md läggs in i galleriet (dubletterna mma-fv, mma-fvi, danfoss-ra-n-inlodning hoppas över). kv-tabeller läses ut där bladet har tabell (eller fast kv), alla `granskad: false`. Poster med bara diagram eller utan kv visar "kv-tabell saknas – läs av i produktbladet". *Användarens val (alternativ 1).*
+
 **B-35 (2026-11-02):** Märkesflikar: en andra flikrad under kategoriflikarna ("Alla märken" + ett märke per flik, svepbar i sidled på mobil). Kategori och märke kombineras som filter. Närbesläktade märken delar flik: **IMI** (TA + Heimeier) och **MMA/Purmo**. Flikarna genereras från `fabrikat` i ventiler.json. *Användarens val (alternativ 1, slå ihop).*
 
 **B-34 (2026-11-02):** Märken som ska med i kompletteringen: Danfoss, MMA, Purmo, IMI Hydronic (TA, Heimeier), Honeywell (finns redan), samt **Divello, Herz och Oventrop**. AGA, Giacomini och Caleffi tas inte med. *Användarens val efter marknadskartläggning (underlag: docs/MARKNAD.md).*

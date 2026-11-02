@@ -105,6 +105,21 @@ Status 2026-11-02, alla kv ogranskade. Bild "ref" = referensbild av närliknande
 
 Räkning: "ref" räknas som foto. Oventrop av9, av6, a-rf och f delar samma datablad. danfoss-ravl.pdf och danfoss-servicehandbok-sv.pdf är identiska. Filer som börjar med "_" (_rotbok2026.pdf, _utbytesinsatser.jpg) är bakgrundsmaterial och är inte kandidater.
 
+## Import 2026-11-02 (B-36)
+
+54 poster inlagda i galleriet, 46 nya kv-poster (alla `granskad: false`). Utan kv: mma-rvr (bara diagram), mma-tif, mma-he-rvo-insats, mma-hp-insats, imi-ta-rvt, imi-ta-radifix, imi-heimeier-retro-s-set, divello-original-exact.
+
+**Tveksamheter att granska först**
+- imi-heimeier-regulux s.4 och imi-heimeier-e-z-ventil s.4 (2-rör): kv är etiketter på diagramkurvor, kopplade till varv via kurvordning.
+- danfoss-ra-u: gamla RA-U 10 N = 0,30 i servicehandboken men 0,28 i danfoss-ra-n; 2008-bladet anger kv(Xp=2) 0,44 men N 0,62.
+- danfoss-vhs-un: tabellen N = 0,48, sidotabellen kv vid Xp=2 = 0,39.
+- danfoss-ra-ncx: bladet har en andra rad värden inom parentes utan förklaring (båda medtagna).
+- danfoss-ravl: RA-N 20 kvs 1,40 (s.30–31) vs 1,58 (s.32).
+- herz-ts-90-e s.6: rubrik DN10 men figur DN20.
+- oventrop-a-rf: s.3 kv 0,95/1,1, s.11 1,00/1,05/1,10 (s.11 använt).
+- mma-fvre: oklart om 0,05–0,5 gäller vid 2K. mma-evoflow: avig vinkel och DN20 går till 0,95.
+- imi-ta-vekolux: kv avser hela radiatorn inkl. Vekolux.
+
 ## Saknas / spår
 
 - **Danfoss RA-FS**: inget hittat.
