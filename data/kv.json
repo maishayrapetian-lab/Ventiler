@@ -3160,7 +3160,7 @@
     ]
   },
   "danfoss-ra-k-vb": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "danfoss-ra-k-vb.pdf (Danfoss datablad Radiatorkoppel 2-rörs RA-K-VB, svenska, HE187/EDTUN207, 2016.11), s. 4, tabeller 'KV-tabell (0,5 °C < Xp < 2 °C)' för 013G3255 / 013G3255-L resp. 013G3255-U",
     "notering": "Koppel med vändbar under del (botten-/sidoanslutning), avstängning mot radiatorn och inbyggd förinställning. 013G3255 och 013G3255-L: kv 0,04-0,50 m³/h (kvs 0,59), motsvarar RA-N 10-insatsen. 013G3255-U: lågflödesutförande, kv 0,010-0,29 (kvs 0,31). kv i m³/h vid Δp 1 bar, P-band mellan 0,5 och 2 (anges i bladet som '°C' men avser K). Förinställning kan justeras mellan 'min' och 7 samt låsas på N; inställning utanför bör inte användas. Tabellen för 013G3255-U har halva steg 0,5-7. Bladet anger 'Min' (0,5) bara för -U-varianten.",
     "tabeller": [
@@ -3285,7 +3285,7 @@
     ]
   },
   "danfoss-ra-k": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "danfoss-ra-k.pdf (Danfoss datablad Radiatorkobling type RA-K, danska, VD.53.S3.01, 1/2001), s. 2, tabell 'kv-tabel (0,5 < Xp < 2K)'",
     "notering": "Äldre radiatorkoppel RA-K för tvårörsanläggningar (ventilhus med böj 013G3363, fördelarhus med golvanslutning 013G3367, mellanrör) med inbyggd förinställning av max vattenflöde. kv i m³/h vid Δp 1 bar; vid inställning N anges kv enligt EN 215-1 vid Xp = 2 K, mellan 1 och N ligger Xp mellan 0,5 och 2 K. Förinställning 1-7 i halva steg (tabellen anger bara hela steg; halva steg finns i kapacitetsdiagrammet, ej avlästa). Inget kvs-värde finns i bladet. Max diff.tryck 0,6 bar. Bladet är på danska.",
     "tabeller": [
@@ -3542,39 +3542,95 @@
   },
   "mma-evoflow": {
     "granskad": false,
-    "kalla": "mma-evoflow.pdf (MMA by Purmo, mars 2020 Rev. 7), s. 5 'Tekniska data' (Kapacitet) och s. 7 'Produktuppgifter'",
-    "notering": "Bladet har endast diagram – läs av mellanlägen i produktbladet (s. 3-4). Förinställning med nyckel FN2 (eller verktyg FV22 som visar kv direkt): packboxen tas bort, insatsen stängs helt och öppnas sedan antal varv enligt diagrammet. För ventil med termostat används skalan Kv∆T2K (P-band 2 K), för ventil med ställdon skalan Kv. Bladet anger kvs 0,82; enligt s. 7 gäller kv-område 0,02-0,95 för avig vinkel (DN10/15) och för alla utföranden DN20. MMA rekommenderar min. kv 0,03 i normalt värmesystem. Kv-enhet anges inte (konsekvent med m³/h vid 1 bar).",
+    "kalla": "mma-evoflow.pdf (MMA by Purmo, mars 2020 Rev. 7), s. 3–4 (diagram, kv-värden ovanför), s. 5 'Tekniska data' (Kapacitet) och s. 7 'Produktuppgifter'",
+    "notering": "Värdena är tryckta ovanför diagrammen s. 3–4. Avig vinkel och DN20 går upp till kv 0,95 (s. 7). Förinställning med nyckel FN2 (eller verktyg FV22 som visar kv direkt): packboxen tas bort, insatsen stängs helt och öppnas sedan antal varv enligt diagrammet. För ventil med termostat används skalan Kv∆T2K (P-band 2 K), för ventil med ställdon skalan Kv. Bladet anger kvs 0,82; enligt s. 7 gäller kv-område 0,02-0,95 för avig vinkel (DN10/15) och för alla utföranden DN20. MMA rekommenderar min. kv 0,03 i normalt värmesystem. Kv-enhet anges inte (konsekvent med m³/h vid 1 bar).",
     "tabeller": [
       {
-        "rubrik": "Kv-område med termostat (Kv∆T2K, 2K)",
+        "rubrik": "Evoflow med termostat (s. 3): varv → kv (m³/h)",
         "kolumner": [
-          "Förinställning",
+          "Varv",
           "kv"
         ],
         "rader": [
           [
-            "min",
+            "0,5",
             "0,02"
           ],
           [
-            "max",
+            "0,75",
+            "0,025"
+          ],
+          [
+            "1,0",
+            "0,05"
+          ],
+          [
+            "1,25",
+            "0,10"
+          ],
+          [
+            "1,5",
+            "0,16"
+          ],
+          [
+            "1,75",
+            "0,24"
+          ],
+          [
+            "2,0",
+            "0,30"
+          ],
+          [
+            "2,5",
+            "0,38"
+          ],
+          [
+            "3,0",
             "0,40"
           ]
         ]
       },
       {
-        "rubrik": "Kv-område utan termostat (Kv, t.ex. ställdon)",
+        "rubrik": "Evoflow med ställdon/utan termostat (s. 4): varv → kv (m³/h)",
         "kolumner": [
-          "Förinställning",
+          "Varv",
           "kv"
         ],
         "rader": [
           [
-            "min",
+            "0,5",
             "0,02"
           ],
           [
-            "max",
+            "0,75",
+            "0,025"
+          ],
+          [
+            "1,0",
+            "0,05"
+          ],
+          [
+            "1,25",
+            "0,10"
+          ],
+          [
+            "1,5",
+            "0,17"
+          ],
+          [
+            "1,75",
+            "0,27"
+          ],
+          [
+            "2,0",
+            "0,40"
+          ],
+          [
+            "2,5",
+            "0,78"
+          ],
+          [
+            "3,0",
             "0,82"
           ]
         ]
@@ -3584,7 +3640,7 @@
   "mma-fvre": {
     "granskad": false,
     "kalla": "mma-fvre.pdf (MMA by Purmo, energiventil FVRe), s. 4 'Tekniska data' (FVRe Kv 0,05-0,5) och s. 2",
-    "notering": "Bladet har endast diagram – läs av mellanlägen i produktbladet (s. 3). Förinställning med nyckel FN2 eller verktyg FV21: skruva av skyddsratten, demontera packboxen, skruva ned stryphylsan i botten (medsols) och skruva upp antal varv enligt diagrammet. Utan termostat stänger ventilen till grundläge kv 0,05 (energisparfunktion). Skyddsrattens bricka används vid injustering för att tillfälligt häva energisparfunktionen. Bladet anger inte om området 0,05-0,5 gäller vid P-band 2 K eller utan termostat. Kv-enhet anges inte (konsekvent med m³/h vid 1 bar).",
+    "notering": "Bladet har endast diagram – läs av mellanlägen i produktbladet (s. 3). Förinställning med nyckel FN2 eller verktyg FV21: skruva av skyddsratten, demontera packboxen, skruva ned stryphylsan i botten (medsols) och skruva upp antal varv enligt diagrammet. Utan termostat stänger ventilen till grundläge kv 0,05 (energisparfunktion). Skyddsrattens bricka används vid injustering för att tillfälligt häva energisparfunktionen. Intervallet 0,05–0,5 gäller vid P-band 2 K (diagrammets axel 'Kv 2°K', s. 3). Kv-enhet anges inte (konsekvent med m³/h vid 1 bar).",
     "tabeller": [
       {
         "rubrik": "Kv-område FVRe",
@@ -3606,7 +3662,7 @@
     ]
   },
   "mma-v-serien": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "mma-v-serien.pdf (MMA by Purmo, mars 2017 Rev. 0), s. 3, 'Tekniska data V-serien' (Kv-värde med termostat/ej termostat; Kvs-värde)",
     "notering": "Ingen förinställning. Gul skyddsratt betyder att ventilen inte är förinställbar. Fast kv: 'Kv-värde (förinst.värde) med termostat/ej termostat' enligt bladet, samt kvs (maxkapacitet) 1,2 för DN10-20 och 1,35 för DN25. Under injustering skruvas skyddsratten i botten och öppnas 3/4 varv för nominell lyfthöjd med termostat. Rekommenderat differenstryck 3-10 kPa. Kv-enhet anges inte (konsekvent med m³/h vid 1 bar). Serien omfattar VR/VV/VAV 10-20 samt NR/NAV 25.",
     "tabeller": [
@@ -3638,7 +3694,7 @@
     ]
   },
   "mma-rfa": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "mma-rfa-rotventil.pdf (MMA by Purmo, augusti 2020 Rev. 2), s. 4, tabell 'RFA 33,35' (1-rörssystem) Kv2K / Kvs",
     "notering": "Tabellen gäller endast 1-rörs RFA 33 och RFA 35 (1-rörssystem). För 2-rörs RFA 34/36 finns endast diagram (s. 3, Kv2K och Kvs mot stryphylsa 0-3,0 varv) – läs av där. Förinställning med nyckel FN2: skruva av skyddsratten, demontera packboxen med stiftet (toppen på FN2), skruva ned stryphylsan i botten (medsols) och skruva upp antal varv enligt tabell/diagram. 'Kv total' = flöde genom ventil inkl. by-pass, 'Kv radiator' = del mot radiatorn, '% radiator' = andel av flödet till radiatorn (1-rörs). Kv2K = vid P-band 2 K (med termostat), Kvs = utan termostat. Kv-enhet anges inte (konsekvent med m³/h vid 1 bar). Bladets sammanfattning anger kv 0,01-0,63 / 0,01-1,0.",
     "tabeller": [
@@ -3714,39 +3770,95 @@
   },
   "mma-evoflow-koppel": {
     "granskad": false,
-    "kalla": "mma-evoflow-koppel.pdf (MMA by Purmo, januari 2017 Rev. 1), s. 4 'Tekniska data' (Kv-värde med termostat / ej termostat; Kvs 0,68)",
-    "notering": "Bladet har endast diagram – läs av mellanlägen i produktbladet (s. 3; skala Kv∆T2K vid termostat, skala Kv vid ställdon/handratt). 2-rörs Evoflow-koppel DN10 med dold förinställning under packboxen, 3 varvs inställning. Förinställning med nyckel FN2 (eller verktyg FV22): öppna antal varv från stängd ventil. Vid injustering ställs nominell lyfthöjd 2 K in genom att skruva skyddsratten i botten och sedan öppna 3/4 varv. MMA rekommenderar 5 kPa vid dimensionerande radiator. Kv-enhet anges inte (konsekvent med m³/h vid 1 bar).",
+    "kalla": "mma-evoflow-koppel.pdf (MMA by Purmo, januari 2017 Rev. 1), s. 3 (diagram, kv-värden ovanför), s. 4 'Tekniska data' (Kv-värde med termostat / ej termostat; Kvs 0,68)",
+    "notering": "Värdena är tryckta ovanför diagrammet s. 3 (skala Kv∆T2K vid termostat, skala Kv vid ställdon/handratt). 2-rörs Evoflow-koppel DN10 med dold förinställning under packboxen, 3 varvs inställning. Förinställning med nyckel FN2 (eller verktyg FV22): öppna antal varv från stängd ventil. Vid injustering ställs nominell lyfthöjd 2 K in genom att skruva skyddsratten i botten och sedan öppna 3/4 varv. MMA rekommenderar 5 kPa vid dimensionerande radiator. Kv-enhet anges inte (konsekvent med m³/h vid 1 bar).",
     "tabeller": [
       {
-        "rubrik": "Kv-område med termostat (2K)",
+        "rubrik": "Evoflow-koppel med termostat (s. 3): varv → kv (m³/h)",
         "kolumner": [
-          "Förinställning",
+          "Varv",
           "kv"
         ],
         "rader": [
           [
-            "min",
+            "0,5",
             "0,02"
           ],
           [
-            "max",
+            "0,75",
+            "0,025"
+          ],
+          [
+            "1,0",
+            "0,05"
+          ],
+          [
+            "1,25",
+            "0,10"
+          ],
+          [
+            "1,5",
+            "0,16"
+          ],
+          [
+            "1,75",
+            "0,22"
+          ],
+          [
+            "2,0",
+            "0,29"
+          ],
+          [
+            "2,5",
+            "0,37"
+          ],
+          [
+            "3,0",
             "0,38"
           ]
         ]
       },
       {
-        "rubrik": "Kv-område utan termostat (ställdon/handratt)",
+        "rubrik": "Evoflow-koppel med ställdon/utan termostat (s. 3): varv → kv (m³/h)",
         "kolumner": [
-          "Förinställning",
+          "Varv",
           "kv"
         ],
         "rader": [
           [
-            "min",
+            "0,5",
             "0,02"
           ],
           [
-            "max",
+            "0,75",
+            "0,025"
+          ],
+          [
+            "1,0",
+            "0,05"
+          ],
+          [
+            "1,25",
+            "0,09"
+          ],
+          [
+            "1,5",
+            "0,16"
+          ],
+          [
+            "1,75",
+            "0,25"
+          ],
+          [
+            "2,0",
+            "0,37"
+          ],
+          [
+            "2,5",
+            "0,65"
+          ],
+          [
+            "3,0",
             "0,68"
           ]
         ]
@@ -3795,7 +3907,7 @@
     ]
   },
   "mma-flex": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "mma-flex.pdf (MMA by Purmo, juli 2020 Rev. 3), s. 4, tabellerna 'FEA VRVM (Kvs)' och 'FEA VRVM (Kv2K)'",
     "notering": "Tabellerna gäller endast 1-rörs Flex (VRVM FEA). För 2-rörs Flex (VRVM FA) finns endast diagram (s. 3, Kv2K med termostat / Kv med ställdon eller handratt mot stryphylsa 0-3,0 varv) – läs av där; bladet anger kv 0,01-0,7 med termostat / 0,01-0,9 utan. Förinställning med nyckel FN2 (eller verktyg FV5): öppna antal varv från stängd ventil. Vid injustering ställs nominell lyfthöjd 2 K in genom att skruva grå skyddsratt i botten och sedan öppna 3/4 varv. 'Kv total' = flöde genom koppel inkl. by-pass, 'Kv radiator' = del mot radiatorn, '% till radiatorn' = andel av flödet till radiatorn. Kv2K = vid P-band 2 K (med termostat), Kvs = utan termostat. MMA rekommenderar 5 kPa vid dimensionerande radiator. Kv-enhet anges inte (konsekvent med m³/h vid 1 bar).",
     "tabeller": [
@@ -3980,7 +4092,7 @@
     ]
   },
   "imi-ta-calypso-exact": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "imi-ta-calypso-exact.pdf (IMI Heimeier Calypso exact), s. 5, tabell 'Valve body (DN 10/15/20) with thermostatic head'",
     "notering": "Bladet är på engelska. Gäller DN10/15/20 (rak, vinkel, axial m.fl.). Steglös förinställning 1-8 med 7 mellanmarkeringar (tabellen anger bara heltal). Inställningsnyckel 3670-01.142 (grå) eller 13 mm blocknyckel; läge 8 = fabriksinställning. Kv-värdena är identiska med V-exact II. P-band 1,0 K och 2,0 K (EN 215: 2 K); kvs = fullt öppen utan termostat. Alla värden i m³/h vid Δp 1 bar. Differenstryck över ventilen bör ej överstiga ca 0,2 bar (ljud). Tillåtet differenstryck för stängd ventil: 1,0 bar (termostathuvud), 3,5 bar (EMO T/TM, EMOtec, TA-TRI, TA-Slider 160).",
     "tabeller": [
@@ -4055,7 +4167,7 @@
     ]
   },
   "imi-ta-calypso-f-exact": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "imi-ta-calypso-f-exact.pdf (IMI Heimeier Calypso F-exact), s. 5, tabell med P-band 1,0 K / 2,0 K / fullt öppen ventilkägla",
     "notering": "Bladet är på engelska. Lågflödesventil DN10/15 (rak, vinkel, axial) med steglös förinställning 1-8 i halvsteg. Inställningsnyckel 3670-01.142; läge 8 = fabriksinställning. kv gäller med termostathuvud vid P-band 1,0 K respektive 2,0 K (EN 215: 2 K). Raden 'fullt öppen ventilkägla' gäller för on/off-reglering, t.ex. termoställdon EMO T (läge 8: 0,544 = fullt öppen ventil, kvs). Flödestoleransen är stor vid låga lägen (±70 % vid 1-1,5). Alla värden i m³/h vid Δp 1 bar. Tillåtet differenstryck för stängd ventil: 1,0 bar (termostathuvud), 3,5 bar (EMO T/TM, EMOtec, TA-TRI, TA-Slider 160). OBS: låga kv - samma kv som Calypso TRV-3 men inte samma ventil.",
     "tabeller": [
@@ -4179,7 +4291,7 @@
     ]
   },
   "imi-ta-trv-2": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "imi-ta-trv-2.pdf (TA TRV-2, TRV-2S, 1-5-5 SE 2008.06), s. 7 (rak och vinkel), s. 8 (omvänd vinkel), s. 9 (TRV-2S små flöden), tabeller 'KvΔT2K'",
     "notering": "Äldre TA-ventil (blad 2008). DN10/15/20, steglös förinställning 1-6 med halvsteg, ställs med förinställningsverktyg TA 50 198-004 (skruva av skyddsratten). Levereras inställd på 6 = fullt öppen. kv i m³/h vid Δp 1 bar. KvΔT2K gäller P-band 2 K tillsammans med termostat TRV 300 eller TRV Nordic. Raden 'Fullt öppen ventilkägla' gäller on/off-reglering med t.ex. ställdon TSE (6 = fullt öppen ventil, kvs). Välj tabell efter utförande: TRV-2 rak/vinkel (vit ratt), TRV-2 omvänd vinkel, TRV-2S (röd ratt, små flöden; rak, vinkel, omvänd vinkel och 'ventil i vinkel för utbyte i radiatorkoppel'). Samma tabell gäller alla DN. Max differenstryck mot stängd termostat 100 kPa; rekommenderat max för att undvika oljud 30 kPa (0,3 bar).",
     "tabeller": [
@@ -4381,7 +4493,7 @@
     ]
   },
   "imi-ta-retro-aga": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "imi-ta-retro-aga.pdf (IMI Heimeier Retro AGA-Set, SE ed.3 04.2021), s. 3, tabell under 'Diagram'",
     "notering": "Utbytesinsats (art 4367-00.301) för AGA Thermopanels 2-rörs radiatorkoppel (fabrikat 1970-1988) inkl. termostat TRV Nordic (9691-00.229 / .230). Förinställning 1-6 med skiftnyckel. kv gäller P-band 2 K; raden 'fullt öppen ventilkägla' gäller on/off-reglering, t.ex. ställdon EMO T. kv i m³/h vid Δp 1 bar (enhet anges inte uttryckligen i tabellen, diagrammet är i kg/h mot Δp). Kopplets stigarrör ska vara märkt med blå tejp (röd tejp: använd art 50 543-001). Passar ej AGA Thermopanel med avluftningsnippel.",
     "tabeller": [
@@ -4552,7 +4664,7 @@
     ]
   },
   "imi-ta-raditrim": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "imi-ta-raditrim.pdf (IMI TA Raditrim, SE ed.1 04.2019), s. 5, tabell 'Kv-värde / Inställning, antal varv [U]'",
     "notering": "Returventil med bibehållen förinställning vid avstängning, DN10/15. PN 10 (art 50 006 vinkel / 50 004 rak): förinställningskägla ställs med insexnyckel 3 mm (avstängningsspindel 5 mm): stäng avstängningsspindeln, skruva in förinställningskäglan till stopp (värde 0), skruva ut antal varv enligt tabell, öppna spindeln. PN 16 (art 50 007, rak, AMETAL): förinställning med insexnyckel 3 mm, avstängning (yttre kägla) med 4 mm; kontrollera att avstängningsspindeln är fullt öppen. PN 16 levereras fullt öppen (3 varv). kv i m³/h vid Δp 1 bar. Kvs enligt artikeltabell s. 6: PN10 1,00 (DN10) / 1,14 (DN15); PN16 0,6 / 0,9. Bladet är inte detsamma som TA Trim (imi-ta-trim).",
     "tabeller": [
@@ -4679,7 +4791,7 @@
     ]
   },
   "imi-ta-radiett-renovett": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "imi-ta-radiett-renovett.pdf (IMI TA RADIETT, RENOVETT, SE ed.3 01.2020), s. 6 (U 1-rör), s. 7 (U 2-rör), s. 8 (S 1-rör), s. 9 (S 2-rör), s. 10 (RVES 1-rör), s. 11 (RVES 2-rör), tabeller vid respektive diagram",
     "notering": "Fördelarkoppel (radiatorventil med förinställning), 1-rör omställningsbar till 2-rör. Välj tabell efter modell (RADIETT-U/RENOVETT-U = underkopplad, -S = sidokopplad, RENOVETT-RVES), rörsystem (1-rör/2-rör) och reglering (termostat = kv vid P-band 2 K, 'KvΔT2K'; handreglerad/on-off med ställdon EMO T = Kv). 'Varv' = antal varv spindeln öppnas från helt stängd. 1-rör: förinställningen styr ANDELEN av slingflödet som går genom radiatorn (0-50 %), kv anges för respektive andel; 2-rör: kv per antal varv. Förinställningsverktyg: RADIETT-U insexnyckel 4 mm; RADIETT-S ytterspindel 4 mm, innerspindel 2,5 mm. Omställning 1-/2-rör: sidokopplade ventiler - locket av, innerspindel medurs till anslag (2,5 mm nyckel) = 2-rör, moturs = 1-rör (kan göras under drift); underkopplade ventiler - byt 1-rörspropp (förnicklad) mot 2-rörspropp (gul, art 50 670-008), kan ej ställas om under drift. Leveransinställning: fullt öppen (2-rör) resp. angiven andel till radiator (1-rör). Max rekommenderat differenstryck för att undvika ljud: 30 kPa. kv i m³/h vid Δp 1 bar (enhet anges inte uttryckligen i tabellerna, diagrammen är l/h mot kPa). Identifiering av gamla ventiler (Radiett/Arcu/TKM/Fellingsbro/Osby), se bladet s. 12-21. Ventil med termostat monterad: kv hänförs till P-band 2 K.",
     "tabeller": [
@@ -5214,7 +5326,7 @@
     ]
   },
   "imi-ta-flowrett-tworett-ta-uni": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "imi-ta-flowrett-tworett-ta-uni.pdf (IMI TA FLOWRETT, TWORETT, TA-UNI, SE ed.7 05.2022), s. 4 (kv-värden), s. 6 (TA-UNI 1-rör), s. 7 (TA-UNI + Calypso TRV-3), s. 9 (TWORETT + Calypso TRV-3), s. 11-12 (artikeltabeller)",
     "notering": "Radiatorkoppel DN10 (rör Ø12). Alla kv avser HELA kopplet (fördelare + förbindelserör + ventil), därför något lägre än fristående Calypso TRV-3 (kv anges för hela kopplet, s. 4). 2-rör: TWORETT (RSD 802) och TA-UNI inställd som 2-rör förinställs på ventilen Calypso TRV-3 med förinställningsverktyg 3670-01.142 (steglös 1-8 i halvsteg, levereras på 8 = fullt öppen); avstängning på fördelaren: TWORETT insexnyckel 6 mm, TA-UNI 4 mm. kv i kolumn 2 gäller P-band 2 K med termostat TRV 300 / TRV Nordic; 'fullt öppen ventilkägla' gäller on/off (t.ex. EMO T). 1-rör: FLOWRETT (RSD 821, konstant kv 1,5 oavsett förinställning; 0-50 % av slingflödet till radiatorn ställs med insexnyckel 4 mm, diagram s. 5 visar andel mot öppningsvarv men saknar siffror, därför ej inkluderat) och TA-UNI: förinställning på fördelaren, andel av slingflödet till radiatorn mot varv (ytterspindel 4 mm; innerspindel 3 mm används för omställning 1-/2-rör: medurs till anslag = 2-rör). Leveransinställning TA-UNI: 50 % (handreglerad) resp. 40 % (termostatreglerad). I tabellerna för TA-UNI 1-rör är sista cellen för 'Varv' tom i bladet. Se även imi-ta-calypso-trv-3 (separat ventil) i kv.json. kv i m³/h vid Δp 1 bar. Rekommenderat differenstryck över radiatorventilen 8-10 kPa; max rekommenderat för att undvika oljud 30 kPa.",
     "tabeller": [
@@ -5539,7 +5651,7 @@
     ]
   },
   "imi-ta-rvo-1": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "imi-ta-rvo-1.pdf (IMI TA RVO-1, SE ed.4 03.2019), s. 3, tabeller 'Antal varv / Kv' vid diagrammen",
     "notering": "Manuell radiatorventil med handratt och steglös förinställning, DN10/15. Levereras fullt öppen. Förinställning: stäng ventilen, skruva bort rattskruven, vrid förinställningsspindeln medurs till stopp med spårskruvmejsel, skruva ut till rätt antal varv enligt tabell, skruva fast rattskruven och öppna. Tabellerna avser antal varv från stängt läge på förinställningsspindeln (0-1 varv saknas i bladet). Tabell 1: DN10 rak. Tabell 2: DN15 rak samt DN10-15 vinkel. Kvs enligt artikeltabell s. 4: rak DN10 1,2; rak DN15 1,7; vinkel DN10/15 1,7. kv i m³/h vid Δp 1 bar (enhet anges som m³/h vid Kvs). Rekommenderat max differenstryck 30 kPa (ljud).",
     "tabeller": [
@@ -5833,7 +5945,7 @@
     ]
   },
   "imi-heimeier-v-exact-ii": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "imi-heimeier-v-exact-ii.pdf (IMI Heimeier V-exact II, 1210-18.483 ed.8 10.2023), s. 5, tabell 'Valve body (DN 10/15/20) with thermostatic head'",
     "notering": "Gäller alla utföranden DN10/15/20 (rak, vinkel, axial, dubbelvinkel m.fl.). Steglös förinställning 1-8 med 7 mellanmarkeringar mellan heltalen (mellanvärden kan ställas in, tabellen anger bara heltal). Inställningsnyckel/universalnyckel 3670-01.142 (grå) eller 13 mm blocknyckel. Läge 8 = fabriksinställning (standard). Termostathuvud påsatt: kv-värden gäller vid P-band 1,0 K respektive 2,0 K (EN 215, 2 K är normalt jämförvärde). kvs = fullt öppen ventil utan termostat. Alla värden i m³/h vid Δp 1 bar. Differenstryck över ventilen bör inte överstiga ca 0,2 bar (ljud). Tillåtet differenstryck för stängd ventil: 1,0 bar (termostathuvud), 3,5 bar (EMO T/TM, EMOtec, TA-TRI, TA-Slider 160). Äldre V-exakt (före 2012) har annan nyckel. Bladet är på engelska.",
     "tabeller": [
@@ -5908,7 +6020,7 @@
     ]
   },
   "imi-heimeier-omvant-flode": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "imi-heimeier-omvant-flode.pdf (IMI Heimeier 'Radiatorventiler for reversert strømning', norska), s. 5, tabell 'Tekniske data - Med trinnløs forinnstilling' (Ventil DN 10/15 med termostathode)",
     "notering": "Bladet är på norska. Gäller V-exact II för omvänd flödesriktning (DN10/15), kv-värdena är identiska med V-exact II (imi-heimeier-v-exact-ii). Steglös förinställning 1-8 (nyckel: se V-exact II). P-band 1,0 K och 2,0 K; kvs = fullt öppen. kv i m³/h vid Δp 1 bar. Tillåtet differenstryck för stängd ventil: 1,0 bar (termostathuvud), 3,5 bar (EMO T-TM, EMOtec, TA-TRI, TA-Slider 160). Bladet beskriver även Eclipse med automatisk flödesbegränsning (10-150 l/h, inställning i l/h, min Δp 10 kPa resp. 15 kPa över 100 l/h) - ingen kv-tabell, ingår ej här.",
     "tabeller": [
@@ -5983,7 +6095,7 @@
     ]
   },
   "imi-heimeier-standard": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "imi-heimeier-standard.pdf (IMI Heimeier Standard), s. 4, tabell 'Valve body with thermostatic head' (Kv per P-band, Kvs)",
     "notering": "Ingen förinställning. Bladet är på engelska. Standard termostatventilhus (svart skyddsratt) DN10/15/20 utan förinställning; injustering sker på returventil (t.ex. Regulux/Regutec). kv gäller med termostathuvud vid P-band 1,0 / 1,5 / 2,0 K (EN 215: 2 K = 0,79). Kvs = fullt öppen ventil, olika för vinkel och rak. Alla värden i m³/h vid Δp 1 bar. Tillåtet differenstryck för stängd ventil: 1,00 bar (termostathuvud), 3,50 bar (EMO T/TM, EMOtec/NC, TA-TRI, TA-Slider 160). Differenstryck över ventilen bör ej överstiga ca 0,2 bar (ljud).",
     "tabeller": [
@@ -6108,7 +6220,7 @@
     ]
   },
   "imi-heimeier-regutec": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "imi-heimeier-regutec.pdf (IMI Heimeier Regutec), s. 5, tabell 'Kv-value / Revolution setting [U]'",
     "notering": "Returventil (låsskydd) med steglös förinställning. Förinställning: stäng helt med insexnyckel 5 mm (medurs), öppna angivet antal varv; levereras helt öppen (fabriksinställning). Gäller vinkel och rak, alla utföranden (även G3/4 utvändig gänga DN15). Diagrammet har även kurvor för 0,75, 1,25 och 1,75 varv, men tabellen anger bara värdena ovan. kv i m³/h vid Δp 1 bar. ζ-värde avser gängat rör enligt DIN 2440. Max drifttemperatur 120 °C, max tryck 10 bar. Bladet är på engelska.",
     "tabeller": [
@@ -6186,7 +6298,7 @@
     ]
   },
   "imi-heimeier-regutec-f": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "imi-heimeier-regutec-f.pdf (IMI Heimeier Regutec F), s. 5, tabell 'Kv-value / Revolution setting [U]'",
     "notering": "Regutec F: kompakt utförande (mått enligt EN 215 serie F, kroppen av mässing) av Regutec. Returventil (låsskydd) med steglös förinställning. Förinställning: stäng helt med insexnyckel 5 mm (medurs), öppna angivet antal varv; levereras helt öppen (fabriksinställning). Gäller vinkel och rak, alla utföranden (även G3/4 utvändig gänga DN15). Diagrammet har även kurvor för 0,75, 1,25 och 1,75 varv, men tabellen anger bara värdena ovan. kv i m³/h vid Δp 1 bar. ζ-värde avser gängat rör enligt DIN 2440. Max drifttemperatur 120 °C, max tryck 10 bar. Bladet är på engelska. Tabellen i bladet är identisk med Regutec (imi-heimeier-regutec).",
     "tabeller": [
@@ -6386,7 +6498,7 @@
     ]
   },
   "imi-heimeier-ettrorsventil-dykror": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "imi-heimeier-ettrorsventil-dykror.pdf (IMI Heimeier Einrohrventil mit Tauchrohr, tyska), s. 4, diagram (kv = 2,50, xp 2K)",
     "notering": "Ingen förinställning. Bladet är på tyska. Ettrörsventil med dykrör (art 3871-02) för radiatorer med sidoanslutning (c/c 58 mm), DN15, blå skyddsratt. Fast kv 2,50 (angivet i diagrammet, P-band 2 K) för ringledningsflödet; i dimensionerande fall är radiatorandelen 35 % av ringflödet (bypass öppen oberoende av avstängning). Kv-värdet anges i diagrammet 'ṁR [kg/h] (xp 2K) kv = 2,50' samt i tabellen med ekvivalenta rörlängder (Kv 2,50). Ingen kvs-uppgift eller kv-tabell per läge i bladet. kv i m³/h vid Δp 1 bar.",
     "tabeller": [
@@ -6406,7 +6518,7 @@
     ]
   },
   "imi-heimeier-3-vags-bypass": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "imi-heimeier-3-vags-bypass.pdf (IMI Heimeier Thermostatic three-way valve body), s. 4, tabell 'Three-way valve body with thermostatic head'; s. 6 (ettrörsinsats)",
     "notering": "Ingen förinställning. Bladet är på engelska. Termostatisk trevägsventil DN15 (art 4151-02 radiatoranslutning vänster, 4150-02 höger) med bypass-T-stycke (4154-02) för tvårörssystem; automatisk bypass vid stängd termostat. 'kv radiator' gäller P-band 1,0 / 1,5 / 2,0 K (EN 215: 2 K = 0,73), 'kv total' = radiator + bypass sammanlagt (1,45); fördelningen vid P-band 2,0 K är ca 50 % (bladet s. 5). Artikeltabellen s. 5 anger kv radiator 0,38 / 0,73 för P-band 1 K / 2 K. Tillåtet differenstryck för stängd ventil: 1,0 bar (termostathuvud), 2,0 bar (EMO T-TM/NC, EMOtec/NC, TA-TRI), 3,5 bar (EMO T/NO, EMOtec/NO, TA-Slider 160). Ettrörs-eftermonteringsinsats (art 4101-03.300): kv total 2,40 vid P-band 2 K (35 % radiator / 65 % bypass), flödesdiagram på begäran. Alla värden i m³/h vid Δp 1 bar.",
     "tabeller": [
@@ -6432,7 +6544,7 @@
     ]
   },
   "honeywell-v2000vs": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "honeywell-v2000vs.pdf (Honeywell datablad V2000VS, danska, DK0H-2103GE23), s. 5, tabell under 'Flow Diagram (based on 2K)': Forindstilling 1-8, xP = 1K, xP = 2K, kv-værdi, cv-værdi",
     "notering": "Radiatorventil V2000VS (beige 'V'-lock, DN10/15/20, PN10) med steglös förinställning 1-8. Förinställning 8 = spolfunktion (fabriksinställd, helt öppen). Bladet är på danska/engelska. Raderna 'xP = 1K' och 'xP = 2K' är kv (m³/h) vid P-band 1 K resp. 2 K (EN 215), raden 'kv-værdi' är kv vid fullt lyft (kvs, jfr kvs 0,75 s. 2) och 'cv-værdi' är motsvarande cv i m³/h. Tabellen gäller alla storlekar DN10-20 (en gemensam tabell). Nominellt flöde 130 kg/h. Max diff.tryck 200 kPa, 20 kPa rekommenderas för tyst drift. Tolerans för förinställningsvärden visas i diagram s. 5 (ej avläst).",
     "tabeller": [
@@ -6507,7 +6619,7 @@
     ]
   },
   "herz-ts-90-v": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "herz-ts-90-v.pdf (HERZ Normblatt TS-90-V, Issue 0422, engelska), s. 2, tabell 'Kv value standard flow tolerance' (Pre-setting 1-9, kv, max. (kvs)) och s. 6, tabell 'kv-value / p-deviation [K] 0,5-4'",
     "notering": "Termostatventilunderdel med steglös, dold förinställning 1-9 (orange förinställningsknapp, justeras med HERZ-TS-90-V-nyckel). DN10-20 (7723 V, 7724 V, 7728 V, 3-axel 7758/7759 V). kv i m³/h vid Δp 1 bar. Kolumnen 'kv 2 K' (s. 2, standard; kurvorna 1-9 avser nominellt lyft 2 K) är samma värden som 2 K-kolumnen i P-bandstabellen s. 6; övriga P-band från s. 6 som extra kolumner. 'max. (kvs)' = fullt öppen ventil. Bladet anger även flödestolerans (± %) som diagram (ej avläst). Tom cell = värde finns inte i bladet.",
     "tabeller": [
@@ -6640,7 +6752,7 @@
     ]
   },
   "herz-ts-98-v": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "herz-ts-98-v.pdf (HERZ Normblatt TS-98-V, engelska), s. 6, tabell 'HERZ-Standard diagram HERZ-TS-98-V: kv-value / p-deviation [K] 0,5-4, Presetting 1-6'",
     "notering": "Termostatventilunderdel med steglös förinställning 1-6 med avläsbar skala (förinställningssteg 6 motsvarar '0' på den märkta överdelen; justeras med HERZ-TS-98-nyckel). DN10-20 (7623 V, 7624 V, 7628 V, 3-axel 7658/7659 V). kv i m³/h vid Δp 1 bar; uppgifterna gäller statiskt tryck 2,5-10 bar. P-band (avvikelse) 0,5-4 K; kv vid 2 K är de värden som anges i diagrammet (1=0,14; 2=0,3; 3=0,42; 4=0,5; 5=0,53; 6=0,56). Inget kvs-värde hittades i bladet.",
     "tabeller": [
@@ -6729,7 +6841,7 @@
     ]
   },
   "herz-ts-90": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "herz-ts-90.pdf (HERZ standard sheet Thermostatic valve TS-90, engelska), s. 5, tabell 'Proportional band / kv-value / p-difference [K] 0,5-4' (TS 90 DN10-DN25)",
     "notering": "OBS: TS-90 har ingen förinställning; fast kv per P-band och dimension. Tabellen är därför kv per P-band (inte per inställning). kv i m³/h vid Δp 1 bar. Ventilen är en fullt öppen termostatventil (kv vid 2 K är jämförbart med övriga fabrikats kv vid 2 K). Bladet anger för DN10 (art. 7723-7759) EN 215-värden a = 0,63 och qmN = 165 kg/h (s. 7). Standarddiagram med kurvor för DN10, 15, 20 och 25 på s. 7-10 (ej avlästa). Max drifttemperatur 120 °C, max tryck 10 bar. Se även herz-ts-90-e (reducerat motstånd, 1-rör) och herz-ts-90-v (förinställning).",
     "tabeller": [
@@ -6898,7 +7010,7 @@
     ]
   },
   "oventrop-av9": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "Oventrops gemensamma datablad Thermostatventile (2014 Oventrop, kat. 1.14, tyska) i oventrop-av9.pdf (= -av6 = -a-rf = -f, samma fil), s. 18 (1.14-18), 'Diagramme 7', tabell 'Voreinstellung / kv-Wert bei 1 K, 1,5 K, 2 K P-Abweichung'; s. 11 (kv und Zeta-Werte, 'Baureihe AV 9')",
     "notering": "Baureihe AV 9: termostatventil med steglös, utifrån avläsbar förinställning 1-9 (inställningsnyckel 118 39 62), gängad M30x1,5, DN10-DN25 (vinkel, rak, axial, Winkel-Eckventil). Tabellen gäller alla utföranden och nominella storlekar (DN10-25). kv i m³/h vid Δp 1 bar. P-avvikelse 2 K (EN 215) är huvudkolumnen, 1 K och 1,5 K som extra kolumner. Rekommenderat differenstryck 30-200 mbar, max 1 bar. s. 11: kv vid max inställning 9 stämmer med tabellen (0,35 / 0,51 / 0,67); kvs-kolumnen för AV 9 är tom i s. 11. Flödestolerans (diagram s. 18): ca ±20 % vid inställning 1 sjunkande till ca ±8 % vid 8-9 (avläst ur kurva, ungefärligt).",
     "tabeller": [
@@ -6970,7 +7082,7 @@
     ]
   },
   "oventrop-av6": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "Oventrops gemensamma datablad Thermostatventile (2014 Oventrop, kat. 1.14, tyska) i oventrop-av9.pdf (= -av6 = -a-rf = -f, samma fil), s. 19 (1.14-19), 'Diagramme 8', tabell 'Voreinstellung / kv-Wert bei 1 K, 1,5 K, 2 K P-Abweichung'; s. 11 ('Baureihe AV 6 und RFV 6', 'ADV 6')",
     "notering": "Baureihe AV 6, RFV 6 och ADV 6 (äldre; ersatt av AV 9): termostatventil med förinställning 1-6 (inställningsnyckel 118 39 61). Tabellen gäller alla utföranden och nominella storlekar. kv i m³/h vid Δp 1 bar. P-avvikelse 2 K (EN 215) är huvudkolumnen, 1 K och 1,5 K extra kolumner. s. 11: vid inställning 6 (VE6) anges kv vid 1 / 1,5 / 2 / 3 K = 0,32 / 0,49 / 0,65 / 0,8 och kvs 0,9 för DN10-DN25 (stämmer med tabellens rad 6; kvs saknas för ADV 6). Flödestolerans enligt diagram s. 19 (ej avläst).",
     "tabeller": [
@@ -7340,7 +7452,7 @@
     ]
   },
   "oventrop-f": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "Oventrops gemensamma datablad Thermostatventile (2014 Oventrop, kat. 1.14, tyska) i oventrop-av9.pdf (= -av6 = -a-rf = -f, samma fil), s. 20 (1.14-20), 'Diagramme 9', tabell 'Voreinstellung / kv-Wert bei 1 K, 1,5 K, 2 K P-Abweichung'; s. 11 ('Baureihe F')",
     "notering": "Baureihe F (fjärrvärme): termostatventil med steglös finförinställning 1-6 (nyckel 118 07 91). Tabellen gäller alla utföranden och storlekar (DN10-DN20). kv i m³/h vid Δp 1 bar. P-avvikelse 2 K (EN 215) är huvudkolumnen, 1 K och 1,5 K extra kolumner. s. 11: vid inställning 6 (VE6) kv vid 1 / 1,5 / 2 / 3 K = 0,20 / 0,29 / 0,32 / 0,35 och kvs 0,37 för DN10-DN20; kv vid 2 K är 0,323 i s. 20 och 0,32 i s. 11 (som tryckt). Flödestolerans (diagram, ej avläst).",
     "tabeller": [
