@@ -31,6 +31,33 @@ Varje beslut får ett nummer, datum, vad som bestämdes och varför. Ändras ett
 | B-25 | 2026-11-01 | Datamodell: `data/ventiler.json` (en post per ventil, id enligt `docs/KALLMATERIAL.md`) och `data/kv.json` (kv-tabeller per ventil-id, med `granskad`, `kalla` och en eller flera tabeller läge → kv). Exempelposterna tas bort. `.gitattributes` markerar PDF/bilder som binära. | Håller kv-data (som granskas separat) isär från ventillistan; git på Windows skulle annars kunna ändra radslut i PDF:er. |
 | B-26 | 2026-11-02 | Version 2 klar: 19 ventiler importerade (bilder → JPEG ≤1200 px), kv-tabeller utlästa för 18 av 19 (alla `granskad: false`), testad i mobilvy (kv-tabell, varning, lazy PDF). MMA FV saknar kv – skalan på fotot är oläslig; kräver skarpare foto eller produktblad. | Agentrapport; granskningsordning: FLA V2 (diagramvärden), V2000LX (0,016 vs 0,16), IMI 4340 (intervall), TA Trim (kvs-avvikelser). |
 
+## Granskning av kv-tabeller
+
+Användaren går igenom en ventil i taget mot produktbladet. Godkända ventiler får `granskad: true` i `data/kv.json` (sätts av Haiku-agent i omgångar).
+
+| Ventil-id | Datum | Resultat |
+|---|---|---|
+| purmo-flamingo-fla-v2 | 2026-11-02 | Godkänd |
+| honeywell-v2000lx | 2026-11-02 | Godkänd med rättelse: högslagstabellen läge 2 ändras från 0,016 till **0,16** i alla tre kolumner (tryckfel i bladet s. 5; 0,016 < läge 1 är omöjligt, s. 4 anger 0,16). Noteringen uppdateras. |
+| imi-heimeier-4340 | 2026-11-02 | Godkänd, **förenklas**: behåll bara kolumnerna Förinställning, kv P-band 0,5–2,0 K och kvs (ta bort 0,4–1,0 K och tolerans). |
+| imi-ta-trim-a | 2026-11-02 | Användaren misstänkte fel; Sonnet-agent verifierade alla 36 värden mot fyra källor (TA 2008, IMI SE 2018, DK 2018, RSK) – identiska. Trolig förväxling med PN10-utförandet (art. 50 009/50 005, finns under imi-ta-trim). **Godkänd**, rubriken ändras till "TRIM A / Trim PN16, art. 50 007". |
+| danfoss-ra-g | 2026-11-02 | Godkänd |
+| danfoss-ra-n | 2026-11-02 | Godkänd (kontrollerad mot bladet 08/2012 s. 2 och 6). **Lägg till tabell** "RA-N 20 – nyare tillverkning (Danfoss aktuella data, 013G0016)": 1 0,10 · 2 0,15 · 3 0,17 · 4 0,26 · 5 0,35 · 6 0,46 · 7 0,73 · N 1,04 · kvs 1,40; källa Danfoss Design Center/aktuellt datablad. 2012-tabellens RA-N 20 märks "tillverkning t.o.m. ca 2012". |
+| calypso-trv-3 | 2026-11-02 | Godkänd (Claude kontrollerade alla 45 värden mot bladet ed.10 05.2022 s. 4–5). |
+| imi-eclipse | 2026-11-02 | Godkänd enligt B-27 (exakt överensstämmelse, s. 4–5). |
+| purmo-flamingo | 2026-11-02 | Godkänd enligt B-27 (exakt, s. 3). |
+| imi-heimeier-4360 | 2026-11-02 | Godkänd enligt B-27 (exakt, s. 5). Notering kompletteras: passar även Henrad, Caradon Stelrad (s. 10). |
+| imi-heimeier-4361 | 2026-11-02 | Godkänd enligt B-27 (exakt, s. 6). Samma komplettering som 4360. |
+| mma-fvi-hle | 2026-11-02 | Godkänd enligt B-27 (exakt, s. 3). Notering kompletteras: tabellen anger N = 0,55 medan bladets tekniska data anger max 0,56 (inkonsekvens i bladet). |
+| purmo-m30 | 2026-11-02 | Godkänd enligt B-27 (exakt, s. 1–2). RD/RDF-tabellerna på s. 3 läggs **inte** in – separata ventiler utan koppling till M30-insatsen. |
+| imi-ta-trim | 2026-11-02 | Godkänd enligt B-27 (exakt, alla tre tabeller s. 5–7). |
+| lindab-ttr-ttv | 2026-11-02 | Godkänd enligt B-27 (exakt, s. 3–5; kvs i l/h). |
+| siemens-vd | 2026-11-02 | Godkänd enligt B-27 (exakt, s. 4). Radetiketten "0 (andra varvet, fullt öppen)" ändras till "0 (slutet av första varvet, 1,5 mm)". |
+| imi-ta-ventim-5950 | 2026-11-02 | Godkänd enligt B-27 (exakt, alla 86 rader, s. 4–5). |
+| purmo-radiatorer | 2026-11-02 | Godkänd enligt B-27 (exakt, s. 9). Katalogen är Altech/SGDS, inte Purmo – användaren valde att **behålla namnet Purmo**. |
+
+**B-27 (2026-11-02):** Resterande 11 ventiler granskas av Claude (oberoende kontroll siffra för siffra mot PDF:en, via Sonnet-agenter). Exakt överensstämmelse → godkänd. Avvikelser och tolkningsfrågor tas upp med användaren en i taget. *Användarens val – ont om tid för egen granskning.*
+
 ## Intervju – frågor och svar
 
 1. **Vad är syftet med webbsidan?** → Intern app (för eget/teamets bruk, t.ex. registrera eller hålla koll på ventiler).

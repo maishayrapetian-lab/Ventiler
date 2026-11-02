@@ -1,11 +1,11 @@
 {
   "danfoss-ra-n": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "Danfoss RA-N.pdf (VDTDH307, 08/2012), s. 6 (tabell 'Inställningsvärden kV-värde', RA-N 10/15/20/20 UK, halva steg) och s. 2 (tabell 'Beställningsnummer och data': RA-N 25 samt RA-U 10)",
-    "notering": "Ventilhus RA 2000 med ventil RA-N (RA-U = lågflöde, DN10). kv i m³/h vid Δp 1 bar. Vid inställning N anges kv enligt EN 215-1 vid Xp = 2 K; vid lägre inställningar minskar Xp ned till 0,5 K vid inställning 1 (mellan 1 och N ligger Xp alltså mellan 0,5 och 2 K). 'Min' = två hack under inställning 1. Förinställning i halva steg Min-7 (RA-U: Min-11). Samma kv för vinkel/rak/låsning per storlek (s. 2). Tom cell = värde saknas i bladet. 'UK' = omvänd vinkel. 20 UK: kv vid N (0,85) är lägre än vid 7 (0,82 ok) men kVS 1,03 – som tryckt. Max diff.tryck för ljud 30 kPa (RA-N), 20 kPa (RA-U); rekommenderat tryckfall 10 kPa. Hela-stegs-värdena i s. 2 stämmer med s. 6. RA-N 25 avser utförande HD 1215-2 serie D. Radiatorer med integrerad ventil: se danfoss-ra-g.",
+    "notering": "Ventilhus RA 2000 med ventil RA-N (RA-U = lågflöde, DN10). kv i m³/h vid Δp 1 bar. Vid inställning N anges kv enligt EN 215-1 vid Xp = 2 K; vid lägre inställningar minskar Xp ned till 0,5 K vid inställning 1 (mellan 1 och N ligger Xp alltså mellan 0,5 och 2 K). 'Min' = två hack under inställning 1. Förinställning i halva steg Min-7 (RA-U: Min-11). Samma kv för vinkel/rak/låsning per storlek (s. 2). Tom cell = värde saknas i bladet. 'UK' = omvänd vinkel. 20 UK: kv vid N (0,85) är lägre än vid 7 (0,82 ok) men kVS 1,03 – som tryckt. Max diff.tryck för ljud 30 kPa (RA-N), 20 kPa (RA-U); rekommenderat tryckfall 10 kPa. Hela-stegs-värdena i s. 2 stämmer med s. 6. RA-N 25 avser utförande HD 1215-2 serie D. Radiatorer med integrerad ventil: se danfoss-ra-g. RA-N 20 finns i två versioner: 2012-bladets värden (kvs 1,58) och Danfoss nuvarande data (kvs 1,40, källa Danfoss Design Center / aktuellt datablad 013G0016) – välj efter ventilens tillverkningsår.",
     "tabeller": [
       {
-        "rubrik": "RA-N 10/15/20/20 UK (halva steg): inställning → kv (m³/h vid Δp 1 bar)",
+        "rubrik": "RA-N 10/15/20/20 UK (halva steg): inställning → kv (m³/h vid Δp 1 bar) – RA-N 20: tillverkning t.o.m. ca 2012",
         "kolumner": [
           "Inställning",
           "RA-N 10",
@@ -240,16 +240,61 @@
             "0,32"
           ]
         ]
+      },
+      {
+        "rubrik": "RA-N 20 – nyare tillverkning (Danfoss aktuella data, 013G0016)",
+        "kolumner": [
+          "Inställning",
+          "kv (m³/h)"
+        ],
+        "rader": [
+          [
+            "1",
+            "0,10"
+          ],
+          [
+            "2",
+            "0,15"
+          ],
+          [
+            "3",
+            "0,17"
+          ],
+          [
+            "4",
+            "0,26"
+          ],
+          [
+            "5",
+            "0,35"
+          ],
+          [
+            "6",
+            "0,46"
+          ],
+          [
+            "7",
+            "0,73"
+          ],
+          [
+            "N",
+            "1,04"
+          ],
+          [
+            "kVS",
+            "1,40"
+          ]
+        ]
       }
     ]
   },
   "imi-ta-trim-a": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "TA Trim.pdf (Tour & Andersson, 2008.06), s. 6 (TRIM A DN10), s. 7 (DN15), s. 8 (DN20), tabeller 'Varv / Kv'; s. 5 (TRIM DN10)",
-    "notering": "Returventil/injusteringsventil: förinställning genom att stänga ventilen helt med insexnyckel (DN10/15: 4 mm, DN20: 6 mm) och öppna angivet antal varv; om ventilen stängs ändras förinställningen. Tryckt med decimalpunkt, här med komma. kv i m³/h vid 1 bar; sista raden = fullt öppen = Kvs. Samma kvs gäller rak/vinkel/olika anslutningar (s. 3-4). Bladet gäller både TRIM och TRIM A.",
+    "notering": "Returventil/injusteringsventil: förinställning genom att stänga ventilen helt med insexnyckel (DN10/15: 4 mm, DN20: 6 mm) och öppna angivet antal varv; om ventilen stängs ändras förinställningen. Tryckt med decimalpunkt, här med komma. kv i m³/h vid 1 bar; sista raden = fullt öppen = Kvs. Samma kvs gäller rak/vinkel/olika anslutningar (s. 3-4). Bladet gäller både TRIM och TRIM A. Obs: Trim PN10 (art. 50 009 vinkel / 50 005 rak) har helt andra värden – se ventilen IMI TA Trim.",
     "tabeller": [
       {
-        "rubrik": "TRIM A: varv → kv (m³/h)",
+        "rubrik": "TRIM A / Trim PN16, art. 50 007: varv → kv (m³/h)",
         "kolumner": [
           "Varv",
           "kv DN10",
@@ -379,7 +424,7 @@
     ]
   },
   "imi-ta-trim": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "Trim_SE_low.pdf (IMI TA, Trim SE ed.2 10.2018), s. 5 (PN 10), s. 6 (PN 16, 50 696) och s. 7 (PN 16, 50 007), tabeller 'Kv-värde / Inställning, antal varv [U]'",
     "notering": "Välj tabell efter artikelnummer/tryckklass: 50 009/50 005 = PN10 (insexnyckel 5 mm, DN10-20); 50 696 = PN16 DN10 med lekande mutter (4 mm); 50 007 = PN16 AMETAL (DN10/15: 4 mm, DN20: 6 mm). Returventil med gemensam kägla för förinställning/avstängning: stäng helt med insexnyckel, öppna angivet antal varv (levereras helt öppen). kv i m³/h vid Δp 1 bar. Kvs i artikeltabellen s. 8 kan avvika från Kvs i diagramtabellen s. 5 (t.ex. vinkel/rak exkl. radiatoranslutning: DN10 1,35 resp. 1,07, DN15 rak 1,60 mot 1,55 i s. 5). Diagramtabell PN10 går bara till 3,5 varv. Not: bladet s. 7 rubricerar DN20 som '(1\")' i diagramtexten men '(3/4\")' i tabellen.",
     "tabeller": [
@@ -585,9 +630,9 @@
     ]
   },
   "honeywell-v2000lx": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "V2000LX.pdf (Honeywell Home EN0H-2114GE23 R0520), s. 4 (standardhuvud 0,22 mm/K) och s. 5 (högslagshuvud T3019HF/T6001HF 0,35 mm/K), tabell 'Presetting / kv-value'",
-    "notering": "Bladet på engelska. Stegless förinställning 1-8 (fabriksinställning 6; ställ inte över 8 eller under 1). Gäller DN15 och DN20 (en gemensam tabell). Använd standardtabellen om inget högslagshuvud (T3019HF/T6001HF) sitter på. OBS: i s. 5-tabellen står 0,016 för läge 2 (alla tre rader) – sannolikt tryckfel i källan för 0,16 (s. 4 anger 0,16), kopierat som tryckt; kontrollera. kv i m³/h vid 1 bar. Läge 8 vid 1K-raden s. 5 är 0,41 (som tryckt). Nominellt flöde 20-235 l/h (standardhuvud) resp. upp till 320 l/h (högslagshuvud) vid 10 kPa.",
+    "notering": "Bladet på engelska. Stegless förinställning 1-8 (fabriksinställning 6; ställ inte över 8 eller under 1). Gäller DN15 och DN20 (en gemensam tabell). Använd standardtabellen om inget högslagshuvud (T3019HF/T6001HF) sitter på. Läge 2 i högslagstabellen är rättat från 0,016 till 0,16 (tryckfel i bladet s. 5; 0,016 är lägre än läge 1 och s. 4 anger 0,16). kv i m³/h vid 1 bar. Läge 8 vid 1K-raden s. 5 är 0,41 (som tryckt). Nominellt flöde 20-235 l/h (standardhuvud) resp. upp till 320 l/h (högslagshuvud) vid 10 kPa.",
     "tabeller": [
       {
         "rubrik": "Standardhuvud: förinställning → kv (m³/h)",
@@ -674,9 +719,9 @@
           ],
           [
             "2",
-            "0,016",
-            "0,016",
-            "0,016"
+            "0,16",
+            "0,16",
+            "0,16"
           ],
           [
             "3",
@@ -719,7 +764,7 @@
     ]
   },
   "lindab-ttr-ttv": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "Lindab TTR_TTV fasadapparater.pdf (2018-07-03), s. 3 (TTR-15, Diagram 1), s. 4 (TTR-12, Diagram 2), s. 5 (TTV-10-12 och TTV-12, Diagram 3), tabell 'POSITIONER / KVs L/H'",
     "notering": "kvs anges i l/h vid 1 bar (inte m³/h; t.ex. 1200 l/h = 1,2 m³/h, jfr 'Kvs 0,05-1,2 (med termiskt ställdon)' i tekniska data). Ratten ställs med skruvmejsel så att önskad position står mot 'jack' på gängringen. Max differenstryck 60 kPa. Bladet nämner orange skyddshatt (jfr osäkerhet i KALLMATERIAL.md). Tabellerna anger kvs per position, inte kv vid P-band.",
     "tabeller": [
@@ -797,7 +842,7 @@
     ]
   },
   "siemens-vd": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "VD.pdf (Siemens CE1N2103sv, 2018-10-09), s. 4, tabell 'kv-värde vid olika förinställda lägen [m3/h]' (Ventildata)",
     "notering": "Små ventiler VD115CLC (DN15), VD120CLC (DN20), VD125CLC (DN25). Förinställningsringen kan vridas två varv; tabellen avser det första varvet (referensnummer 0 första = stängd ... 7, sedan 0 igen = fullt öppen vid 1,5 mm lyfthöjd; efter ytterligare ett varv ökar lyfthöjden till 2,5 mm men kv överskrider inte värdet i sista kolumnen). Ventilen levereras med ringen helt öppen; för förinställning måste ringen först stängas helt. Förinställning under 5 rekommenderas inte (skuggat område: lyfthöjdsupplösningen för liten). Flödestolerans i % (± ), som tryckt: 0, 60, 30, 20, 10, 10, 10, 10, 10 för kolumnerna 0-7-0. kv i m³/h vid Δp 1 bar. VD120CLC och VD125CLC har samma kv-värden; separata dimensioneringsdiagram för VD115CLC (s. 4) och VD120/125CLC (s. 5). Typöversikt s. 2: kv inställbart 0,25...1,9 (DN15) resp. 0,25...2,6 (DN20, DN25).",
     "tabeller": [
@@ -877,7 +922,7 @@
             "10"
           ],
           [
-            "0 (andra varvet, fullt öppen)",
+            "0 (slutet av första varvet, 1,5 mm)",
             "1,5",
             "1,90",
             "2,60",
@@ -889,7 +934,7 @@
     ]
   },
   "imi-ta-ventim-5950": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "Ventim injusteringsventil 5950.pdf (produktblad 2016-11-23), s. 4-5, tabell 'Kv-värden' (Pos → kv per dimension)",
     "notering": "Injusteringsventil VM5950 (Ventim). Pos = inställning på ratten (dubbla skalor), steg 0,1. Tom cell = läget finns inte för den dimensionen (tryckt som '-'). kv = Q/√dP, i m³/h vid 1 bar. 'DN 15 LF' = lågflödesutförande av DN15, separat kolumn. Max pos per dimension: DN15 LF och DN15 6,0; DN20 6,0; DN25 8,0; DN32 9,0; DN40 9,0; DN50 7,0. Tryckfallsdiagram s. 6-12.",
     "tabeller": [
@@ -1771,7 +1816,7 @@
     ]
   },
   "danfoss-ra-g": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "Danfoss RA-G.pdf (VDVEB407, 12/2013), s. 1, tabell 'Beställningsuppgifter och tekniska data' (Förinställning, Kv-värde, Kvs)",
     "notering": "Integrerade ventiler för inbyggnad i radiatorer: 013G0372 (RA-N, röd inställningsring, normala flöden) och 013G0373 (RA-U, gul inställningsring, små flöden), anslutning G½A. Kv i m³/h vid Δp 1 bar; vid inställning N anges kv enligt SS-EN 215 som Xp = 2 K, vid lägre inställning minskar Xp ned till ca 0,5 K vid 1. Tabellen visar genomsnittliga uppmätta värden för integrerade ventiler MED radiator. Med vätskefylld termostat (RAW, RAS-D, fjärrinställning RA5060) ökar Xp med faktor 1,6 vid N. Förinställning 1-7 fritt valbar; N = helt öppen (fabriksinställning, måste användas vid enrörssystem). Diff.tryck rekommenderat 0,05-0,2 bar, tekniskt max 0,6 bar. Kapacitetsdiagram (utan radiator och kopplingar) s. 3. Skiljs från RA-N/RA-U ventilhus (danfoss-ra-n), som har andra kv-värden.",
     "tabeller": [
@@ -1833,7 +1878,7 @@
     ]
   },
   "calypso-trv-3": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "Calypso_TRV-3.pdf (IMI TA, SE ed.10 05.2022), s. 5, tabell 'Kv-värden' (P-band 2,0 K resp. Fullt öppen ventilkägla) och s. 4, tabell 'Inställning' (Kv och l/h med termostat)",
     "notering": "Steglös förinställning 1-8 (levereras på 8 = fullt öppen), ändras med förinställningsverktyg 3670-01.142 (skruva av skyddsratten). Gäller DN10, DN15, DN20 (KvΔT2K 0,010-0,520 för alla, s. 6). Raden P-band 2,0 K gäller med termostat TRV 300 eller TRV Nordic. Raden 'fullt öppen ventilkägla' gäller on/off-reglering (t.ex. ställdon EMO T); 0,544 vid läge 8 = Kvs (fullt öppen ventil). Kv i m³/h vid Δp 1 bar. Kolumnen l/h (s. 4) är bladets flöde 'med termostat' per inställning (ej omräknad av oss). Flödestolerans (s. 4, bara vid hela steg): 70 % (1), 55 % (2), 40 % (3), 30 % (4), 20 % (5), 15 % (6), 12 % (7), 10 % (8). Max rekommenderat diff.tryck för att undvika oljud 30 kPa; max 100 kPa för att ventilen inte ska öppna mot stängd termostat.",
     "tabeller": [
@@ -1941,7 +1986,7 @@
     ]
   },
   "imi-eclipse": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "Eclipse.pdf (IMI TA, SE Eclipse S ed.9 07.2020), s. 4 (rad 'Inställning / l/h') och s. 5 (tabell 'Inställningsvärden för att undvika underflöden')",
     "notering": "OBS: Eclipse har automatisk flödesbegränsning (AFC) och anger INGET kv-värde per inställning. Inställningen ger ett maxflöde i l/h som inte överskrids oberoende av differenstryck inom arbetsområdet (min diff.tryck 10 kPa för 10-100 l/h, 15 kPa för 100-150 l/h; max 60 kPa, <30 dB(A)). Tabellernas kolumner är därför flöde (l/h), inte kv. Steglös inställning 1-15 = 10-150 l/h; på sid 4 är bara läge 1, 5, 10, 15 numrerade (övriga är streck), l/h-raden går i steg om 10 från 10 till 150 – här 1:1 mappat. P-band max 2 K (max 1 K upp till 90 l/h). Max nominellt flöde qmN vid 10 kPa enligt EN 215: 110 l/h. Flödestolerans enligt diagram s. 4 (ca ±25 % vid 10 l/h, ca ±10 % från 90 l/h) – avläst ur diagram, ungefärligt. Ventilen levereras med igångsättningsinställning. Inställningsnyckel 3930-02.142 eller 11 mm fast nyckel. Orange skyddshatt. Tabell 2 är vägledning för att undvika underflöde; tom cell = värde finns inte i bladet.",
     "tabeller": [
@@ -2118,7 +2163,7 @@
     ]
   },
   "purmo-flamingo-fla-v2": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "Flamingo FLA V2 röd plast runt pigg.pdf (MMA by Purmo, 'Flamingo 202303 rev 8'), s. 4 (tryckfallsdiagram 'FLA kvΔT2K') och s. 5 (diagram 'FLA kvs'), värdeetiketter längs inställningslinjerna",
     "notering": "utläst ur diagram – ungefärligt/kontrollera mot originalbladet: bladet har INGEN sifferstabell, bara kv-värden tryckta som etiketter ovanför respektive inställningslinje (position 1, 2, 3, 3,5, 4 ... 9, N = 16 linjer). Värdena är parade med positionerna i etikettordning. Låg säkerhet för de tätt packade etiketterna vid läge 6-9 (särskilt 0,24 och 0,32 – textlagret i PDF:en visar ibland 0,224 resp. 0,332). Slutpunkterna stämmer med bladets tekniska data s. 3: kv 0,009-0,49 med termostat / 0,009-0,60 utan termostat. 'kv ΔT2K' = med termostat (P-band 2 K); 'kvs' = med ställdon (diagram KVS ska användas vid ställdon). Insats för integrerade radiatorer: FLA-HLI (invändig O-ring: Purmo Plint, CV, Thermopanel m.fl.) och FLA-HLE (utvändig O-ring: Purmo Kon, Narbonne), anslutning M28x1,5/M30x1,5. Förinställningsskalan finns på verktyget FLA V2 (FDJU10001TOX00SEO). M28x1,5: stängningsläge 10,0, slaglängd ca 2 mm. Noggrannhet enligt EN 215 ±10 % (läge N, 10 kPa).",
     "tabeller": [
@@ -2215,7 +2260,7 @@
     ]
   },
   "purmo-flamingo": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "Flamingo.pdf (MMA by Purmo, 'September 2022 Rev. 7'), s. 3, tabell 'Position / kv på 2K / kvs / Flöde l/h vid 2K 10 kPa / 5 kPa / Tolerans l/h'",
     "notering": "Äldre Flamingo-insats, positioner 1-10 + N (kv 0,016-0,52 med termostat / 0,016-0,81 utan). Förinställningsskalan finns på verktyget (FLA förinställningsverktyg, RSK 481 21 30); M28x1,5: stängningsläge 10,0, slaglängd ca 2 mm. kv i m³/h (enheten anges inte uttryckligen vid tabellen; flödesraderna är l/h). 'kv på 2K' = med termostat (P-band 2 K), kvs = fullt lyft/ställdon. Flöden i l/h vid 2K och 10 resp. 5 kPa (statiskt tryck 1 bar, vatten 50 °C, insatsen ska ha varit i kontakt med vatten minst 24 h före mätning). Noggrannhet enligt EN 215 ±10 % (läge N, 10 kPa). Används i radiatorer med integrerade koppel (FLA-HLI invändig O-ring, FLA-HLE utvändig O-ring). Skiljs från FLA V2-bladet (halva steg, se purmo-flamingo-fla-v2).",
     "tabeller": [
@@ -2323,70 +2368,56 @@
     ]
   },
   "imi-heimeier-4340": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "IMI 4340 .pdf (HEIMEIER/TA Hydronics 'Thermostatic inserts', engelska, 1500-18.483 03.2011), s. 8, tabell 'Technical data – Thermostatic insert VHV with 6 presetting ranges' (diagram for 4333, 4340)",
-    "notering": "Bladet är på engelska. Gäller insats VHV art 4333 och 4340 (4340: Biasi, Demrad, Celikpan; s. 3). Varje förinställningsläge 1-6 är ett kv-INTERVALL (min-max) eftersom flödet varierar med P-bandet inom området (aneinanderliggande flödesområden utan glapp); '>' = större än föregående områdes maxvärde. Inget enskilt kv per läge anges, men kvs per läge gäller fullt öppen. Läge 6 = standardinställning/fabriksinställning. Tabellen gäller radiator med integrerad ventil utan anslutningskoppling. Rad 1: P-band min 0,4 K till max 1,0 K; rad 2: P-band min 0,5 K till max 2,0 K (not *: gäller inställning 1-5). Inställningsnyckel 3501-02.142. Differenstryck för låg ljudnivå ca max 0,2 bar. kv/kvs i m³/h vid 1 bar. Samma serie med finare steg (VHF 4334/4341) finns på s. 9 men ingår ej här.",
+    "notering": "Bladet är på engelska. Gäller insats VHV art 4333 och 4340 (4340: Biasi, Demrad, Celikpan; s. 3). Varje förinställningsläge 1-6 är ett kv-INTERVALL (min-max) eftersom flödet varierar med P-bandet inom området (aneinanderliggande flödesområden utan glapp); '>' = större än föregående områdes maxvärde. Inget enskilt kv per läge anges, men kvs per läge gäller fullt öppen. Läge 6 = standardinställning/fabriksinställning. Tabellen gäller radiator med integrerad ventil utan anslutningskoppling. P-band 0,5-2,0 K (not *: gäller inställning 1-5). Kolumnen för P-band 0,4–1,0 K och toleranser är utelämnade för läsbarhet, se bladet. Inställningsnyckel 3501-02.142. Differenstryck för låg ljudnivå ca max 0,2 bar. kv/kvs i m³/h vid 1 bar. Samma serie med finare steg (VHF 4334/4341) finns på s. 9 men ingår ej här.",
     "tabeller": [
       {
         "rubrik": "Förinställning → kv-intervall (min-max) och kvs",
         "kolumner": [
           "Förinställning",
-          "kv, P-band 0,4-1,0 K (min-max, m³/h)",
           "kv, P-band 0,5-2,0 K (min-max, m³/h)",
-          "kvs (m³/h)",
-          "Flödestolerans (± %)"
+          "kvs (m³/h)"
         ],
         "rader": [
           [
             "1",
-            "0,019 - 0,040",
             "0,025 - 0,047",
-            "0,051",
-            "45"
+            "0,051"
           ],
           [
             "2",
-            ">0,040 - 0,096",
             ">0,047 - 0,126",
-            "0,133",
-            "40"
+            "0,133"
           ],
           [
             "3",
-            ">0,096 - 0,225",
             ">0,126 - 0,269",
-            "0,294",
-            "27"
+            "0,294"
           ],
           [
             "4",
-            ">0,225 - 0,269",
             ">0,269 - 0,417",
-            "0,430",
-            "22"
+            "0,430"
           ],
           [
             "5",
-            ">0,269 - 0,301",
             ">0,417 - 0,600",
-            "0,630",
-            "12"
+            "0,630"
           ],
           [
             "6",
-            ">0,301 - 0,319",
             ">0,600 - 0,840",
-            "0,980",
-            "10"
+            "0,980"
           ]
         ]
       }
     ]
   },
   "imi-heimeier-4360": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "Thermostatic_inserts_SE_low 4360&4361.pdf (IMI Heimeier, ed.7 01.2023), s. 5, tabell 'Tekniska data – Termostatöverdel VHV8S med 8 steglöst varierbara förinställningsvärden' (diagram för 4343, 4360, 4365)",
-    "notering": "Gäller insats 4360 (VHV8S, förinställning; samma tabell även för 4343 och 4365). Radiatorer (s. 3): Korado, U.S. Steel (4360); Lyngson, Epecon (4365). Steglös inställning 1-8 med 7 möjliga mellanlägen; 8 = normalinställning/fabriksinställning. Inställningsnyckel 3670-01.142 (engelska bladet anger 4360-00.142). Insatsen (inte ventilhuset) bestämmer kv. Differenstryck för låg ljudnivå ca max 0,2 bar. Tabellen gäller radiator med termostatventil utan anslutningskoppling. Kv/kvs i m³/h vid Δp 1 bar. Samma värden finns i engelska bladet 'IMI 4340 .pdf' (s. 10-11).",
+    "notering": "Gäller insats 4360 (VHV8S, förinställning; samma tabell även för 4343 och 4365). Radiatorer (s. 3): Korado, U.S. Steel (4360); Lyngson, Epecon (4365). Steglös inställning 1-8 med 7 möjliga mellanlägen; 8 = normalinställning/fabriksinställning. Inställningsnyckel 3670-01.142 (engelska bladet anger 4360-00.142). Insatsen (inte ventilhuset) bestämmer kv. Differenstryck för låg ljudnivå ca max 0,2 bar. Tabellen gäller radiator med termostatventil utan anslutningskoppling. Kv/kvs i m³/h vid Δp 1 bar. Samma värden finns i engelska bladet 'IMI 4340 .pdf' (s. 10-11). Passar även Henrad och Caradon Stelrad (bladet s. 10).",
     "tabeller": [
       {
         "rubrik": "4360 (VHV8S, förinställning): förinställning → kv (m³/h)",
@@ -2459,9 +2490,9 @@
     ]
   },
   "imi-heimeier-4361": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "Thermostatic_inserts_SE_low 4360&4361.pdf (IMI Heimeier, ed.7 01.2023), s. 6, tabell 'Tekniska data – Termostatöverdel VHV8S med 8 steglöst varierbara fininställningsvärden' (diagram för 4361, 4366)",
-    "notering": "Gäller insats 4361 (VHF8S, fininställning, för mycket lågt flöde/hög temperaturspridning; samma tabell även för 4366). Sidrubriken säger 'VHV8S' men tabellen avser fininställningsserien 4361/4366. Läge 1 och 2 har samma kv vid xp 2,0 K (0,06), som tryckt. Steglös inställning 1-8 med 7 möjliga mellanlägen; 8 = normalinställning/fabriksinställning. Inställningsnyckel 3670-01.142 (engelska bladet anger 4360-00.142). Insatsen (inte ventilhuset) bestämmer kv. Differenstryck för låg ljudnivå ca max 0,2 bar. Tabellen gäller radiator med termostatventil utan anslutningskoppling. Kv/kvs i m³/h vid Δp 1 bar. Samma värden finns i engelska bladet 'IMI 4340 .pdf' (s. 10-11).",
+    "notering": "Gäller insats 4361 (VHF8S, fininställning, för mycket lågt flöde/hög temperaturspridning; samma tabell även för 4366). Sidrubriken säger 'VHV8S' men tabellen avser fininställningsserien 4361/4366. Läge 1 och 2 har samma kv vid xp 2,0 K (0,06), som tryckt. Steglös inställning 1-8 med 7 möjliga mellanlägen; 8 = normalinställning/fabriksinställning. Inställningsnyckel 3670-01.142 (engelska bladet anger 4360-00.142). Insatsen (inte ventilhuset) bestämmer kv. Differenstryck för låg ljudnivå ca max 0,2 bar. Tabellen gäller radiator med termostatventil utan anslutningskoppling. Kv/kvs i m³/h vid Δp 1 bar. Samma värden finns i engelska bladet 'IMI 4340 .pdf' (s. 10-11). Passar även Henrad och Caradon Stelrad (bladet s. 10).",
     "tabeller": [
       {
         "rubrik": "4361 (VHF8S, fininställning): förinställning → kv (m³/h)",
@@ -2534,9 +2565,9 @@
     ]
   },
   "mma-fvi-hle": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "FVI-HLE.pdf (MMA by Purmo, December 2021 Rev. 9), s. 3, tabell 'Position / Kv vid 2K / Tolerans'",
-    "notering": "FVI-insats (FVI-HLE-M28 med utvändig O-ring; FVI-HLI-M28 med invändig) för integrerade radiatorer: Epecon, Lenhovda LP, Watt Heating WKI/WRI/WRPI, Curant Trading m.fl. Anslutning M28x1,5. Steglös förinställning med 'FVI nyckel'. Kv vid P-band 2 K (med termostat); bladet anger kv-intervall 0,03-0,56 med termostat / 0,03-0,87 utan termostat, men kvs per läge anges inte. Enhet för kv anges inte uttryckligen vid tabellen (konsekvent med övriga blad: m³/h vid 1 bar). Insatserna bör vara monterade i trycksatt system minst 24 timmar innan flödesmätning.",
+    "notering": "FVI-insats (FVI-HLE-M28 med utvändig O-ring; FVI-HLI-M28 med invändig) för integrerade radiatorer: Epecon, Lenhovda LP, Watt Heating WKI/WRI/WRPI, Curant Trading m.fl. Anslutning M28x1,5. Steglös förinställning med 'FVI nyckel'. Kv vid P-band 2 K (med termostat); bladet anger kv-intervall 0,03-0,56 med termostat / 0,03-0,87 utan termostat, men kvs per läge anges inte. Enhet för kv anges inte uttryckligen vid tabellen (konsekvent med övriga blad: m³/h vid 1 bar). Insatserna bör vara monterade i trycksatt system minst 24 timmar innan flödesmätning. Obs: tabellen anger N = 0,55 medan bladets tekniska data anger max 0,56 (inkonsekvens i bladet).",
     "tabeller": [
       {
         "rubrik": "Position → kv vid 2K",
@@ -2606,7 +2637,7 @@
     ]
   },
   "purmo-m30": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "MMA Prumo M30.pdf, s. 1 och s. 2, tabell 'P-avvikelse 2K: Förinställning / kv' (s. 3 gäller PURMO RD/RDF och ingår ej i tabellen)",
     "notering": "Ventilinsats Purmo M30 (RSK 6734055) för PurmoKon-konvektorer i tvårörssystem, M30x1,5 mot termostat (t.ex. MMA Evosense). Förinställning med nyckel 6734060 eller liten skiftnyckel: övre plastdelen vrids så att anvisningen står mot önskad siffra. kv vid P-avvikelse 2K per förinställning 1-6; sista kolumnen 'max. / 6' = 1,50 är maxvärde (fullt öppen). Kv-enhet anges inte vid tabellen; diagrammet har flöde i l/h och tryckförlust i kPa (konsekvent med m³/h vid 1 bar). Sid 3 i samma PDF visar PURMO RD (kv vid 2K för läge 1,2,3,4,5,6,7,N: 0,09/0,12/0,17/0,22/0,29/0,45/0,57/0,63) och PURMO RDF (0,05/0,06/0,07/0,09/0,12/0,15/0,19/0,24) – oklar koppling till M30 och därför inte inlagda som tabell här.",
     "tabeller": [
@@ -2650,7 +2681,7 @@
     ]
   },
   "purmo-radiatorer": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "PROD_212_6738700.pdf (Altech/SGDS 'Panelradiatorer och konvektorer', AH-102-2023), s. 9, tabell 'Injusteringsvärden' (Tillopp och retur) samt s. 22 (Insatsventil, injusteringsnyckel)",
     "notering": "Katalogen är Altechs (SGDS Gruppen) panelradiatorkatalog, inte Purmo-märkt, men innehåller kv per injusteringsläge för insatsventilen (M28x1,5, art 6675000, injusteringsnyckel art 6774000) i radiatorer med integrerat koppel typ D (D11/D21/D22/D33). Kv vid 2K P-band och Kvs vid full öppning, enhet m³/h vid 1 bar (enhet står inte uttryckligen vid tabellen; diagrammet anger kv-linjer 0,05/0,12/0,25/0,4/0,5/0,6 och full öppning 1,51). Typ K (standard, utan integrerat koppel) har ingen kv-data. Ingen kv-data för konvektorer.",
     "tabeller": [
