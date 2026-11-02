@@ -56,6 +56,8 @@ Användaren går igenom en ventil i taget mot produktbladet. Godkända ventiler 
 | imi-ta-ventim-5950 | 2026-11-02 | Godkänd enligt B-27 (exakt, alla 86 rader, s. 4–5). |
 | purmo-radiatorer | 2026-11-02 | Godkänd enligt B-27 (exakt, s. 9). Katalogen är Altech/SGDS, inte Purmo – användaren valde att **behålla namnet Purmo**. |
 
+**B-30 (2026-11-02):** Ingen inloggning – appen är öppen för alla som har länken. Streamlit och Cloudflare Access avfärdade. *Användarens val.*
+
 **B-29 (2026-11-02):** Repot görs **publikt** så att GitHub Pages fungerar på gratisplanen (privat repo kräver uppgradering). Pages publiceras från `main` / root till https://maishayrapetian-lab.github.io/Ventiler/. *Användarens val (alternativ 1 av: publikt repo, GitHub Pro, annan hosting).*
 
 **B-28 (2026-11-02):** MMA FV får ingen kv-tabell – användaren valde att hoppa över den.
