@@ -226,20 +226,22 @@ h1 {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
-  font-size: 1.25rem;
+  font-family: "Arial Narrow", "Roboto Condensed", "Helvetica Neue", Arial, sans-serif;
+  font-size: 10pt;
+  font-stretch: condensed;
   font-variant-numeric: tabular-nums;
 }
 
 .kv-tabell th,
 .kv-tabell td {
-  padding: 0.6rem 0.9rem;
+  padding: 0.3rem 0.6rem;
   text-align: right;
   white-space: nowrap;
   border-bottom: 1px solid var(--border);
 }
 
 .kv-tabell thead th {
-  font-size: 1rem;
+  font-size: 10pt;
   background: var(--bg);
 }
 
