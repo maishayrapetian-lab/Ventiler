@@ -9,6 +9,7 @@ const vyVisare = $("vy-visare");
 let ventiler = [];
 let kv = {}; // { <id>: { granskad, kalla, notering, tabeller: [...] } }
 let kategori = "alla"; // vald flik, behålls när man går tillbaka från visaren
+let marke = "alla"; // vald märkesflik, behålls på samma sätt som kategori
 let galleriScroll = 0;
 let franGalleri = false; // true om vi navigerade till visaren från galleriet inne i appen
 
@@ -25,8 +26,35 @@ function titel(v) {
   return `${v.fabrikat} – ${v.modell}`;
 }
 
+// Märkesgrupp av fabrikat – all mappning på ett ställe; nya märken fungerar automatiskt.
+function markesgrupp(fabrikat) {
+  const f = String(fabrikat || "").trim();
+  if (/^IMI/i.test(f)) return "IMI";
+  if (/MMA|Purmo/i.test(f)) return "MMA/Purmo";
+  return f;
+}
+
+function ritaMarken() {
+  const iKategori = ventiler.filter((v) => kategori === "alla" || v.kategori === kategori);
+  const grupper = [...new Set(iKategori.map((v) => markesgrupp(v.fabrikat)))]
+    .sort((a, b) => a.localeCompare(b, "sv"));
+  if (marke !== "alla" && !grupper.includes(marke)) marke = "alla";
+  const nav = $("marken");
+  nav.replaceChildren();
+  for (const g of ["alla", ...grupper]) {
+    const knapp = el("button", "", g === "alla" ? "Alla märken" : g);
+    knapp.type = "button";
+    knapp.dataset.marke = g;
+    knapp.setAttribute("aria-pressed", String(g === marke));
+    nav.append(knapp);
+  }
+}
+
 function ritaGalleri() {
-  const lista = ventiler.filter((v) => kategori === "alla" || v.kategori === kategori);
+  ritaMarken();
+  const lista = ventiler.filter((v) =>
+    (kategori === "alla" || v.kategori === kategori) &&
+    (marke === "alla" || markesgrupp(v.fabrikat) === marke));
   const galleri = $("galleri");
   galleri.replaceChildren();
   for (const v of lista) {
@@ -61,6 +89,13 @@ $("flikar").addEventListener("click", (e) => {
   const knapp = e.target.closest("button[data-kategori]");
   if (!knapp) return;
   kategori = knapp.dataset.kategori;
+  ritaGalleri();
+});
+
+$("marken").addEventListener("click", (e) => {
+  const knapp = e.target.closest("button[data-marke]");
+  if (!knapp) return;
+  marke = knapp.dataset.marke;
   ritaGalleri();
 });
 

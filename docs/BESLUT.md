@@ -56,6 +56,12 @@ Användaren går igenom en ventil i taget mot produktbladet. Godkända ventiler 
 | imi-ta-ventim-5950 | 2026-11-02 | Godkänd enligt B-27 (exakt, alla 86 rader, s. 4–5). |
 | purmo-radiatorer | 2026-11-02 | Godkänd enligt B-27 (exakt, s. 9). Katalogen är Altech/SGDS, inte Purmo – användaren valde att **behålla namnet Purmo**. |
 
+**B-35 (2026-11-02):** Märkesflikar: en andra flikrad under kategoriflikarna ("Alla märken" + ett märke per flik, svepbar i sidled på mobil). Kategori och märke kombineras som filter. Närbesläktade märken delar flik: **IMI** (TA + Heimeier) och **MMA/Purmo**. Flikarna genereras från `fabrikat` i ventiler.json. *Användarens val (alternativ 1, slå ihop).*
+
+**B-34 (2026-11-02):** Märken som ska med i kompletteringen: Danfoss, MMA, Purmo, IMI Hydronic (TA, Heimeier), Honeywell (finns redan), samt **Divello, Herz och Oventrop**. AGA, Giacomini och Caleffi tas inte med. *Användarens val efter marknadskartläggning (underlag: docs/MARKNAD.md).*
+
+**B-33 (2026-11-02):** Galleriet ska kompletteras med radiatorventiler (inkl. konvektorventiler och ventilinsatser) som saknas – både aktuella och gamla/utgångna modeller. Krav per post: namnet måste med; bild ska i första hand hittas (annars "Bild saknas" och bild läggs till i efterhand); produktblad och kv-tabell när det finns. Termostathuvuden räknas inte som egna poster. *Användarens önskemål.*
+
 **B-32 (2026-11-02):** Appen används främst i telefoner. Eftersom iPhone/Android saknar Arial Narrow laddas webbtypsnittet **Archivo Narrow** (Google Fonts, 400/700) för kv-tabellen, så att alla telefoner får samma smala tabell. Arial Narrow ligger kvar som reserv. *Användarens val: "det som funkar överallt".*
 
 **B-31 (2026-11-02):** kv-tabellen visas i Arial Narrow 10 pt med tätare celler (reserv: Roboto Condensed / `font-stretch: condensed` på mobiler utan Arial Narrow). *Användarens önskemål.*

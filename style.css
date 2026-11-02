@@ -77,6 +77,26 @@ h1 {
   border-color: var(--accent-bg);
 }
 
+/* Märkesrad: en rad, sidledes scrollbar */
+.flikar.marken {
+  margin-top: 0.5rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.flikar.marken::-webkit-scrollbar {
+  display: none;
+}
+
+.flikar.marken button {
+  flex: none;
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
 /* ---- Galleri ---- */
 .galleri {
   display: grid;
