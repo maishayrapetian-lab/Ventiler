@@ -70,6 +70,6 @@
   {"id":"oventrop-f","kategori":"radiator","fabrikat":"Oventrop","modell":"F (fjärrvärme)","bilder":[],"produktblad":"produktblad/oventrop-ventilunterteile.pdf"},
   {"id":"divello-original-exact","kategori":"radiator","fabrikat":"Divello","modell":"Original Exact","bilder":["bilder/divello-original-exact.jpg"],"produktblad":"produktblad/divello-original-exact.pdf"},
   {"id":"lindab-ttr-ttv","kategori":"regler","fabrikat":"Lindab","modell":"TTR/TTV","bilder":["bilder/lindab-ttr-ttv.jpg"],"produktblad":"produktblad/lindab-ttr-ttv.pdf"},
-  {"id":"imi-ta-ventim-5950","kategori":"regler","fabrikat":"IMI TA","modell":"Ventim 5950","bilder":["bilder/imi-ta-ventim-5950.jpg"],"produktblad":"produktblad/imi-ta-ventim-5950.pdf"},
+  {"id":"ventim-5950","kategori":"regler","fabrikat":"Ventim","modell":"5950","bilder":["bilder/ventim-5950.jpg"],"produktblad":"produktblad/ventim-5950.pdf"},
   {"id":"siemens-vd","kategori":"regler","fabrikat":"Siemens","modell":"VD1..CLC","bilder":[],"produktblad":"produktblad/siemens-vd.pdf"}
 ]

@@ -56,6 +56,15 @@ Användaren går igenom en ventil i taget mot produktbladet. Godkända ventiler 
 | imi-ta-ventim-5950 | 2026-11-02 | Godkänd enligt B-27 (exakt, alla 86 rader, s. 4–5). |
 | purmo-radiatorer | 2026-11-02 | Godkänd enligt B-27 (exakt, s. 9). Katalogen är Altech/SGDS, inte Purmo – användaren valde att **behålla namnet Purmo**. |
 
+**B-39 (2026-11-03):** Den externa faktakollen ("Faktakoll kv-tabeller – Ventiler", 2026-11-03) rättas in, enligt användarens beslut. Faktakollen fann att alla kv-värden stämmer med produktbladen.
+- **Två ändrade värden:**
+  - Herz TS-90-kv insats E: 0,56 → 0,5, som är det tryckta värdet. Noteringen säger att PDF:ens textlager anger 0,56.
+  - Danfoss RAVL RA-N 20 UK vid 3,5: 0,36 → 0,30, efter RA-N-databladet. Noteringen säger att servicehandboken anger 0,36.
+- **Nytt fabrikat:** Ventim 5950 ändras från IMI TA till fabrikat **Ventim**, med nytt id `ventim-5950`. Filerna har bytt namn.
+- **Oventrop A/RF:** tabellen gäller art.nr 118 10–13 xx och 118 47/48 xx. En tabell för 118 00–04 xx och 118 45/46 xx har lagts till.
+- **Övriga rättelser** gäller rubriker, kolumnnamn och noteringar för RA-IN, RA-FN, RA-N, RA-K-VB, VHS-UN 15, TRV-2S, Eclipse, Calypso exact, V2000VS, Flamingo FLA V2, Flex-koppel och AV 6.
+- **Källhänvisningar** till filer som inte finns har rättats.
+
 **B-38 (2026-11-02):** Granskningsresultat B-37: 0 avvikelser. 27 tabeller exakta → godkända. 19 tolkningsfall godkända enligt Claudes förslag med förtydligande noteringar (källor som säger emot sig själva, butikssida som källa, värden från diagrametiketter, kv för hela radiatorn m.m.). imi-ta-termostatoverdelar behålls trots samma värden som 4340/4360/4361 (TA-märkt). Evoflow/Evoflow-koppel fick tabeller per varv. Alla 64 kv-tabeller är nu `granskad: true`. *Användarens val: "Ja, godkänn alla".*
 
 **B-37 (2026-11-02):** De 46 nya kv-tabellerna granskas på samma sätt som i B-27: oberoende kontroll siffra för siffra mot produktbladet via Sonnet-agenter. Exakt överensstämmelse → `granskad: true`. Avvikelser och tolkningsfrågor tas upp med användaren en i taget. *Användarens val.*
