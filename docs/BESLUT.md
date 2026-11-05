@@ -56,6 +56,17 @@ Användaren går igenom en ventil i taget mot produktbladet. Godkända ventiler 
 | imi-ta-ventim-5950 | 2026-11-02 | Godkänd enligt B-27 (exakt, alla 86 rader, s. 4–5). |
 | purmo-radiatorer | 2026-11-02 | Godkänd enligt B-27 (exakt, s. 9). Katalogen är Altech/SGDS, inte Purmo – användaren valde att **behålla namnet Purmo**. |
 
+**B-42 (2026-11-05):** De fem FV-posterna är granskade mot produktbladen av en oberoende agent.
+- **Inga kv-intervall var fel.**
+- **Rättat:**
+  - FV5:s art.nr för rev 8 är FDCL1000500X00SE0; 4873805 är det äldre numret.
+  - Sidhänvisningar.
+  - Verktygsförfarandet hänvisar nu till FVXR-bladet s. 3. FV-/FVRe-bladen säger bara att verktyget "förenklar inställningen".
+  - Verktygets färg anges som "enligt produktfoto".
+  - FV21:s art.nr anges som hämtat från Ahlsell/katalog.
+- **Bilder:** dubblettbilden mma-fv-3 är borttagen. FVRe-koppel har fått FV21-fotot.
+- **Status:** alla fem posterna är satta till `granskad: true`.
+
 **B-41 (2026-11-05):** Fyra FV-ändringar:
 - Det befintliga MMA FV-kortet får FV-bladet rev 8 (dec 2025).
 - Nytt kort: äldre FV med bladet rev 4 (2017), där minsta kv är 0,01.

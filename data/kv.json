@@ -3646,9 +3646,9 @@
     ]
   },
   "mma-fvre": {
-    "granskad": false,
-    "kalla": "mma-fvre.pdf (MMA by Purmo, energiventil FVRe), s. 4 'Tekniska data' (FVRe Kv 0,05-0,5) och s. 2; verktyget FV21 enligt FVRe-koppel-bladet s. 2 och rotbok/Ahlsell",
-    "notering": "Förinställningsverktyg FV21 (grön urtavla) är direktmärkt i kv: nollställ mot indexmärket och skruva upp stryphylsan tills önskat kv står vid indexmärket (gäller endast Kv 2K). Bladet har endast diagram – läs av mellanlägen i produktbladet (s. 3). Förinställning med nyckel FN2 eller verktyg FV21: skruva av skyddsratten, demontera packboxen, skruva ned stryphylsan i botten (medsols) och skruva upp antal varv enligt diagrammet. Utan termostat stänger ventilen till grundläge kv 0,05 (energisparfunktion). Skyddsrattens bricka används vid injustering för att tillfälligt häva energisparfunktionen. Intervallet 0,05–0,5 gäller vid P-band 2 K (diagrammets axel 'Kv 2°K', s. 3). Kv-enhet anges inte (konsekvent med m³/h vid 1 bar).",
+    "granskad": true,
+    "kalla": "mma-fvre.pdf (MMA by Purmo, energiventil FVRe), s. 4 'Tekniska data' (FVRe Kv 0,05-0,5) och s. 4 (förinställning FN2/FV21); verktyget FV21 enligt FVRe-koppel-bladet s. 2 och rotbok/Ahlsell; FV21 art.nr enligt Ahlsell/MMA katalog (ej i bladet)",
+    "notering": "Förinställningsverktyg FV21 (grön urtavla; färg enligt produktfoto) är direktmärkt i kv: nollställ mot indexmärket och skruva upp stryphylsan tills önskat kv står vid indexmärket (gäller endast Kv 2K). Bladet har endast diagram – läs av mellanlägen i produktbladet (s. 3). Förinställning med nyckel FN2 eller verktyg FV21: skruva av skyddsratten, demontera packboxen, skruva ned stryphylsan i botten (medsols) och skruva upp antal varv enligt diagrammet. Utan termostat stänger ventilen till grundläge kv 0,05 (energisparfunktion). Skyddsrattens bricka används vid injustering för att tillfälligt häva energisparfunktionen. Intervallet 0,05–0,5 gäller vid P-band 2 K (FVRe-koppel-bladet s. 3 anger axeln 'Kv2K'). Kv-enhet anges inte (konsekvent med m³/h vid 1 bar). (Verktygsförfarandet beskrivs i FVXR-bladet s. 3 för FV8 och i MMA:s verktygsblad; FV-/FVRe-bladet säger bara att verktyget förenklar inställningen.)",
     "tabeller": [
       {
         "rubrik": "Inställningsverktyg",
@@ -7589,9 +7589,9 @@
     ]
   },
   "mma-fv": {
-    "granskad": false,
-    "kalla": "produktblad/mma-fv.pdf (MMA by Purmo, december 2025 Rev. 8), s. 2 (förinställning, FN2/FV5), s. 4 'Tekniska data'",
-    "notering": "Förinställning med verktyget FV5: skruva av skyddsratten, demontera packboxen, skruva ned stryphylsan i botten (medsols) och montera verktyget FV5 över insatsen. Nollställ skalan mot indexmärket och skruva upp stryphylsan tills önskat kv står vid indexmärket. Gäller endast Kv 2K (med termostat). Alternativt med nyckel FN2: öppna antal varv från stängd ventil enligt tryckfallsdiagrammet i bladet (ingen varv-till-kv-tabell finns i bladet). MMA rekommenderar min Kv 0,05 (s. 3). Skyddsratten skruvas i botten och öppnas 3/4 varv för nominell lyfthöjd med termostat. Kv-enhet anges inte (konsekvent med m³/h vid 1 bar). Äldre blad (rev 4, 2017) anger min kv 0,01, se kortet FV äldre.",
+    "granskad": true,
+    "kalla": "produktblad/mma-fv.pdf (MMA by Purmo, december 2025 Rev. 8), s. 2 (översikt), s. 3 (min kv), s. 4 (inställning), s. 8 (artiklar)",
+    "notering": "Förinställning med verktyget FV5: skruva av skyddsratten, demontera packboxen, skruva ned stryphylsan i botten (medsols) och montera verktyget FV5 över insatsen. Nollställ skalan mot indexmärket och skruva upp stryphylsan tills önskat kv står vid indexmärket. Gäller endast Kv 2K (med termostat). Alternativt med nyckel FN2: öppna antal varv från stängd ventil enligt tryckfallsdiagrammet i bladet (ingen varv-till-kv-tabell finns i bladet). MMA rekommenderar min Kv 0,05 (s. 3). Skyddsratten skruvas i botten och öppnas 3/4 varv för nominell lyfthöjd med termostat. Kv-enhet anges inte (konsekvent med m³/h vid 1 bar). Äldre blad (rev 4, 2017) anger min kv 0,01, se kortet FV äldre. (Verktygsförfarandet beskrivs i FVXR-bladet s. 3 för FV8 och i MMA:s verktygsblad; FV-/FVRe-bladet säger bara att verktyget förenklar inställningen.) Färg enligt produktfoto.",
     "tabeller": [
       {
         "rubrik": "Inställningsverktyg",
@@ -7606,7 +7606,7 @@
           ],
           [
             "Art.nr",
-            "4873805 (RSK 480 61 03)"
+            "FDCL1000500X00SE0 (RSK 480 61 03); äldre art.nr 4873805"
           ],
           [
             "Avläsning",
@@ -7637,9 +7637,9 @@
     ]
   },
   "mma-fv-2017": {
-    "granskad": false,
-    "kalla": "produktblad/mma-fv-2017.pdf (MMA, maj 2017 Rev. 4), s. 2 (förinställning, FN2/FV5), s. 4 'Tekniska data'",
-    "notering": "Förinställning med verktyget FV5: skruva av skyddsratten, demontera packboxen, skruva ned stryphylsan i botten (medsols) och montera verktyget FV5 över insatsen. Nollställ skalan mot indexmärket och skruva upp stryphylsan tills önskat kv står vid indexmärket. Gäller endast Kv 2K (med termostat). Alternativt med nyckel FN2: öppna antal varv från stängd ventil enligt tryckfallsdiagrammet i bladet (ingen varv-till-kv-tabell finns i bladet). Äldre blad: min kv 0,01 (rev 4, 2017) mot 0,03 i rev 8 (2025). MMA rekommenderar min Kv 0,05 enligt rev 8 (finns inte i rev 4). Kv-enhet anges inte (konsekvent med m³/h vid 1 bar).",
+    "granskad": true,
+    "kalla": "produktblad/mma-fv-2017.pdf (MMA, maj 2017 Rev. 4), s. 4 (inställning), s. 7 (artiklar)",
+    "notering": "Förinställning med verktyget FV5: skruva av skyddsratten, demontera packboxen, skruva ned stryphylsan i botten (medsols) och montera verktyget FV5 över insatsen. Nollställ skalan mot indexmärket och skruva upp stryphylsan tills önskat kv står vid indexmärket. Gäller endast Kv 2K (med termostat). Alternativt med nyckel FN2: öppna antal varv från stängd ventil enligt tryckfallsdiagrammet i bladet (ingen varv-till-kv-tabell finns i bladet). Äldre blad: min kv 0,01 (rev 4, 2017) mot 0,03 i rev 8 (2025). MMA rekommenderar min Kv 0,05 enligt rev 8 (finns inte i rev 4). Kv-enhet anges inte (konsekvent med m³/h vid 1 bar). (Verktygsförfarandet beskrivs i FVXR-bladet s. 3 för FV8 och i MMA:s verktygsblad; FV-/FVRe-bladet säger bara att verktyget förenklar inställningen.) Färg enligt produktfoto.",
     "tabeller": [
       {
         "rubrik": "Inställningsverktyg",
@@ -7685,9 +7685,9 @@
     ]
   },
   "mma-fvre-koppel": {
-    "granskad": false,
-    "kalla": "produktblad/mma-fvre-koppel.pdf (MMA, oktober 2016 Rev. 2), s. 2 (förinställning, FV21), s. 4 'Tekniska data'",
-    "notering": "Förinställning med verktyget FV21: skruva av skyddsratten, demontera packboxen, skruva ned stryphylsan i botten (medsols) och montera verktyget FV21 över insatsen. Nollställ skalan mot indexmärket och skruva upp stryphylsan tills önskat kv står vid indexmärket. Gäller endast Kv 2K (med termostat). Alternativt med nyckel FN2: öppna antal varv från stängd ventil enligt tryckfallsdiagrammet i bladet (ingen varv-till-kv-tabell finns i bladet). Ventilen i kopplet har grön skyddsratt (= förinställning) och integrerat energisparläge typ e. Vid injustering ställs nominell lyfthöjd 2 K in genom att skruva skyddsratten i botten och öppna 3/4 varv. Gäller DN 10. Kv-enhet anges inte (konsekvent med m³/h vid 1 bar).",
+    "granskad": true,
+    "kalla": "produktblad/mma-fvre-koppel.pdf (MMA, oktober 2016 Rev. 2), s. 2 (förinställning, FV21), s. 4 'Tekniska data'; FV21 art.nr enligt Ahlsell/MMA katalog (ej i bladet)",
+    "notering": "Förinställning med verktyget FV21 (grön urtavla; färg enligt produktfoto). Stegen skruva av skyddsratten, demontera packboxen, skruva ned stryphylsan i botten (medsols), montera verktyget FV21 över insatsen och nollställa skalan mot indexmärket är enligt FVRe-bladet s. 4 (finns inte i detta blad). Skruva därefter upp stryphylsan tills önskat kv står vid indexmärket. Gäller endast Kv 2K (med termostat). Alternativt med nyckel FN2: öppna antal varv från stängd ventil enligt tryckfallsdiagrammet i bladet (ingen varv-till-kv-tabell finns i bladet). (Verktygsförfarandet beskrivs i FVXR-bladet s. 3 för FV8 och i MMA:s verktygsblad; FV-/FVRe-bladet säger bara att verktyget förenklar inställningen.) Ventilen i kopplet har grön skyddsratt (= förinställning) och integrerat energisparläge typ e. Vid injustering ställs nominell lyfthöjd 2 K in genom att skruva skyddsratten i botten och öppna 3/4 varv. Gäller DN 10. Kv-enhet anges inte (konsekvent med m³/h vid 1 bar).",
     "tabeller": [
       {
         "rubrik": "Inställningsverktyg",
@@ -7730,7 +7730,7 @@
     ]
   },
   "mma-fvxr": {
-    "granskad": false,
+    "granskad": true,
     "kalla": "produktblad/mma-fvxr.pdf (MMA, maj 2017 Rev. 0), s. 3 (förinställning FV8), s. 4 'Tekniska data'",
     "notering": "Förinställning med verktyget FV8: skruva av skyddsratten, demontera packboxen, skruva ned stryphylsan i botten (medsols) och montera verktyget FV8 över insatsen. Nollställ skalan mot indexmärket och skruva upp stryphylsan tills önskat kv står vid indexmärket. Gäller endast Kv 2K (med termostat). Alternativt med nyckel FN2: öppna antal varv från stängd ventil enligt tryckfallsdiagrammet i bladet (ingen varv-till-kv-tabell finns i bladet). Foto på FV8 saknas. Bladets förstasida anger 'DN 10-15' men tabellen och artikellistan gäller DN 15 och DN 20. Rekommenderat differenstryck 3-10 kPa. Kv-enhet anges inte (konsekvent med m³/h vid 1 bar).",
     "tabeller": [
