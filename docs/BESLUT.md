@@ -56,6 +56,10 @@ Användaren går igenom en ventil i taget mot produktbladet. Godkända ventiler 
 | imi-ta-ventim-5950 | 2026-11-02 | Godkänd enligt B-27 (exakt, alla 86 rader, s. 4–5). |
 | purmo-radiatorer | 2026-11-02 | Godkänd enligt B-27 (exakt, s. 9). Katalogen är Altech/SGDS, inte Purmo – användaren valde att **behålla namnet Purmo**. |
 
+**B-43 (2026-11-05):** På MMA FV-korten ska galleribilden visa ventilen tillsammans med skyddsratten ("hatten") i rätt färg, eftersom färgen visar vilken serie och vilket verktyg som gäller. Det är användarens önskemål. Grå hatt = FV/FVXR (förinställningsbar), grön = FVRe.
+- **Bilder:** FV äldre och FVXR har fått en grå hatt monterad i bilden. Hatten är urklippt ur FV-bladets foto och tonen neutraliserad till grå, eftersom bladen bekräftar att den är grå.
+- **Tabeller:** verktygstabellerna har fått raden "Skyddsratt (hatt)".
+
 **B-42 (2026-11-05):** De fem FV-posterna är granskade mot produktbladen av en oberoende agent.
 - **Inga kv-intervall var fel.**
 - **Rättat:**
