@@ -56,6 +56,21 @@ Användaren går igenom en ventil i taget mot produktbladet. Godkända ventiler 
 | imi-ta-ventim-5950 | 2026-11-02 | Godkänd enligt B-27 (exakt, alla 86 rader, s. 4–5). |
 | purmo-radiatorer | 2026-11-02 | Godkänd enligt B-27 (exakt, s. 9). Katalogen är Altech/SGDS, inte Purmo – användaren valde att **behålla namnet Purmo**. |
 
+**B-41 (2026-11-05):** Fyra FV-ändringar:
+- Det befintliga MMA FV-kortet får FV-bladet rev 8 (dec 2025).
+- Nytt kort: äldre FV med bladet rev 4 (2017), där minsta kv är 0,01.
+- Nytt kort: FVXR.
+- Nytt kort: FVRe-koppel.
+
+kv-sektionen för FV-korten visar en verktygstabell: verktyg, färg, art.nr, att skalan läses direkt i kv, och kv-intervall per DN enligt bladet. Någon tabell från varv till kv finns inte, eftersom bladen bara har ett diagram och verktygets skala redan visar kv.
+
+**B-40 (2026-11-05):** MMA FV-ventilerna har ingen skala på själva ventilen. Förinställningen görs med ett verktyg vars urtavla är märkt i kv:
+- FV5 (svart, art 4873805) för FVR/FVV/FVAV.
+- FV21 (grön, art 4873821) för FVRe.
+- FV8 (röd, art 4873808) för FVXR.
+
+Varje FV-ventil får ett eget kort. I ventilvyn visas rätt verktyg med namn, färg och art.nr, ett foto på verktyget och produktbladet. Verktygen får inga egna kort.
+
 **B-39 (2026-11-03):** Den externa faktakollen ("Faktakoll kv-tabeller – Ventiler", 2026-11-03) rättas in, enligt användarens beslut. Faktakollen fann att alla kv-värden stämmer med produktbladen.
 - **Två ändrade värden:**
   - Herz TS-90-kv insats E: 0,56 → 0,5, som är det tryckta värdet. Noteringen säger att PDF:ens textlager anger 0,56.
